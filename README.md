@@ -14,4 +14,5 @@ Si = Pi xor Ci               ...for every bit i
 
 This avoids the need to ripple the carry bits serially down the chain [2]. Carry and sum terms are implemented using CMOS mirror logic, whereas generate and propagate terms are implemented using Static CMOS logic.
 # Reference circuit Design
+## Generate and Propagate circuit of 4 bit CLA adder
 ![4_bit_CLA_reference_circuit_generate_propogate_circuit](https://user-images.githubusercontent.com/99788755/155375356-f33f86ed-de48-4c54-8fc0-4a05b6a2e078.jpg)
