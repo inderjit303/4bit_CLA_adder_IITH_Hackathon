@@ -6,19 +6,21 @@ conventional RCA adder by eliminating the cascading effect of the carry bits. Th
 # Reference circuit details: 
 Proposed 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms [1]. 
 
-Gi = AiBi                //  ...for every bit i
+For every bit i,
 
-Pi = Ai+Bi              // ...for every bit i
+Gi = AiBi               
+
+Pi = Ai+Bi               
 
 Then, they are used to calculate carry bits 
 
-Ci+1 = Gi + PiCi           //   ...for every bit i
+Ci+1 = Gi + PiCi              
 
 This means every carry bit can be found from generate and propagate terms.
 
 Next, sum bits are evaluated using 
 
-Si = AiBiCi xor(Ci+1)_bar (Ai+Bi+Ci)     //   ...for every bit i
+Si = AiBiCi xor (Ci+1)_bar (Ai+Bi+Ci)       
 
 This avoids the need to ripple the carry bits serially down the chain [2]. Carry and sum terms are implemented using CMOS mirror logic, whereas generate and propagate terms are implemented using Static CMOS logic.
 # Reference circuit Design:
