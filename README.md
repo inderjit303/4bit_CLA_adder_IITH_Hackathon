@@ -61,10 +61,10 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 
 1. After creating and saving the 4 bit CLA adder schematic testbench, go to 'Tools' and open 'Primewave' to start the simulation. 
 2. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file present in the HSPICE folder. 
-3. After this click on the analyses and select the 'tran' (Transient) analysis in the analysis window and give the 'Start Time', 'Stop Time', and 'Step Size' parameters and save it. 
-
-
-5. Then add the outputs which needs to be plotted by selecting the nets on the schematic.
+3. After this click on the analyses and select the 'tran' (Transient) analysis in the analysis window and give the 'Start Time', 'Stop Time', and 'Time step' parameters and save it. 
+4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns 
+5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
+6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
 
 
 # References: 
