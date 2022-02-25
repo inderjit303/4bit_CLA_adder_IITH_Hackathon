@@ -68,7 +68,8 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
 
 ![Input_output transient waveforms](https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png)
-Fig : 4 bit CLA adder input-output transient waveforms 
+Fig : Four bit CLA adder input-output transient waveforms 
+
 ![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
 Fig : Expanded view of 4 bit CLA adder input-output transient waveforms 
 
