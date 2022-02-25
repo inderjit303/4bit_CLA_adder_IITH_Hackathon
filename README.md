@@ -136,11 +136,25 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
 
+## Actual Waveforms: 
 ![Input_output transient waveforms](https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png)
-                                  Fig : Addition of of two 4 bit binary numbers with carry in bit 
-                                
+Fig : Addition of of two 4 bit binary numbers with carry in bit  
 ![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
-                                  Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit 
+Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit 
+
+## Verification of binary addition from waveforms: 
+
+The input-output waveforms showcases the addition of of two 4 bit binary numbers with carry in bit
+
+![4 bit binary addition process](https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png)
+
+![binary addition time 1](https://user-images.githubusercontent.com/99788755/155765462-b911bc23-34da-4775-888a-c69946429fd2.png)
+
+![binary addition time 2](https://user-images.githubusercontent.com/99788755/155765480-63098648-c5fa-483f-acf4-18ded424e411.png)
+
+![binary addition time 3](https://user-images.githubusercontent.com/99788755/155765490-ccfc6c31-928e-4db0-b695-8e669bc3e195.png)
+
+
                                   
 # References: 
 [1] M. S. Hossain and F. Arifin, "A Proposed Design of Conventional 4-Bit Carry Look-Ahead Adder Improving Performance," 2020 Advanced Computing and Communication Technologies for High Performance Applications (ACCTHPA), 2020, pp. 89-93, doi:10.1109/ACCTHPA49271.2020.9213227.
