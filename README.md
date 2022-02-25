@@ -58,6 +58,8 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ## 4 bit CLA adder Schematic 
 ![4_bit_CLA_adder_schematic](https://user-images.githubusercontent.com/99788755/155681033-967496f3-7f98-46fd-ac6a-fbf4f5b7ac4e.png)
 
+## 4 bit CLA adder Symbol
+![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155681890-bbd07a91-198b-4787-bee7-9ab1403f6bdf.png)
 
 
 ## 4 Bit CLA adder Testbench 
