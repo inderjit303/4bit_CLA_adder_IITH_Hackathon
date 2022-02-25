@@ -84,15 +84,15 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ![Sum_circuit_symbol](https://user-images.githubusercontent.com/99788755/155740537-aa450801-15aa-4faf-af15-dd625e789964.png)
 
 ## 4 bit CLA adder Schematic:
-![4_bit_CLA_adder_schematic](https://user-images.githubusercontent.com/99788755/155744535-362aff40-fbe2-4edb-ad50-b3e7286dec16.png)
 
+![4_bit_CLA_adder_schematic](https://user-images.githubusercontent.com/99788755/155744716-7b8413c9-5c1d-426a-a1d6-b710813e325d.png)
 
 ## 4 bit CLA adder Symbol:
-![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155744554-34afcad3-30c8-4433-b416-9b553a8ee596.png)
-
+![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155744744-045a9169-68c6-415e-a447-a519745f412b.png)
 
 ## 4 Bit CLA adder Testbench: 
-![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155679929-1b400081-4916-409b-bb85-4aed1bb831a6.png)
+![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155744769-3df1ec95-81e7-4882-b4a5-268c3a26060b.png)
+
 
 
 
