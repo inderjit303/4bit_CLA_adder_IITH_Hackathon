@@ -151,7 +151,8 @@ The input-output waveforms showcases the addition of of two 4 bit binary numbers
 
 ![4 bit binary addition process](https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png)
 
-![binary addition time 1](https://user-images.githubusercontent.com/99788755/155765462-b911bc23-34da-4775-888a-c69946429fd2.png)
+![binary addition time 1](https://user-images.githubusercontent.com/99788755/155766852-681f6b51-3fdd-41c8-9a77-9a5d719cbe30.png)
+
 
 ![binary addition time 2](https://user-images.githubusercontent.com/99788755/155765480-63098648-c5fa-483f-acf4-18ded424e411.png)
 
