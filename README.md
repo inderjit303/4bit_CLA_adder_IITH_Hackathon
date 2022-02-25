@@ -37,7 +37,6 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 # Reference Circuit Waveforms:
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
 
-![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
 
 
 # Tools Used:
@@ -69,7 +68,7 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
 
 ![Input_output transient waveforms](https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png)
-
+![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
 
 # References: 
 [1] M. S. Hossain and F. Arifin, "A Proposed Design of Conventional 4-Bit Carry Look-Ahead Adder Improving Performance," 2020 Advanced Computing and Communication Technologies for High Performance Applications (ACCTHPA), 2020, pp. 89-93, doi:10.1109/ACCTHPA49271.2020.9213227.
