@@ -158,6 +158,10 @@ The input-output waveforms showcases the addition of of two 4 bit binary numbers
 
 ![binary addition time 3](https://user-images.githubusercontent.com/99788755/155765490-ccfc6c31-928e-4db0-b695-8e669bc3e195.png)
 
+
+# Author:
+Inderjit Singh Dhanjal, Assitant Professor, K.J Somaiya College of Engineering, Mumbai
+
 # Acknowledgements:
 1. Cloud Based Analog IC Design Hackathon (https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
 2. Synopsys India (https://www.synopsys.com/)
