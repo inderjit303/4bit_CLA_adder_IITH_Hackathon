@@ -144,7 +144,7 @@ Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit
 
 ## Verification of binary addition from waveforms: 
 
-The input-output waveforms showcases the addition of of two 4 bit binary numbers with carry in bit
+The input-output waveforms showcases the addition of of two 4 bit binary numbers with carry in and carry out bits.
 
 ![4 bit binary addition process](https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png)
 
