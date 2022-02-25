@@ -2,7 +2,7 @@
 This repository presents step-wise design and simulation guide for implementing 4-bit carry look-ahead (CLA) adder using CMOS mirror logic in 28nm PDK using Synopsy Custom Compiler and Primesim Tool.
 # Abstract:
 This report presents a transistor-level implementation of a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic. CLA adder design overcomes the delay issue in 
-conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. Simulations are carried out in 28nm PDK using Synopsy Custom Compiler and PrimeSim tool. 
+conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. Simulations are carried out in 28nm PDK using Synopsy Custom Compiler and PrimeWave tool. 
 # Reference circuit details: 
 Proposed 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms [1]. 
 
@@ -38,9 +38,6 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
 
 
-
-
-
 # Tools Used:
 ## 1. Synopsys Custom Compiler:
  The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
@@ -51,12 +48,23 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ## 3. Synopsys 28nm PDK:
  The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
 
+# Pre-Layout Schematics and Simulations:
 
 
 
 
 
 
+# Simulations: 
+
+## Transient analysis
+
+1. After creating and saving the 4 bit CLA adder schematic testbench, go to 'Tools' and open 'Primewave' to start the simulation. 
+2. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file present in the HSPICE folder. 
+3. After this click on the analyses and select the 'tran' (Transient) analysis in the analysis window and give the 'Start Time', 'Stop Time', and 'Step Size' parameters and save it. 
+
+
+5. Then add the outputs which needs to be plotted by selecting the nets on the schematic.
 
 
 # References: 
