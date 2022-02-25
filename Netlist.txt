@@ -1,0 +1,242 @@
+*  Generated for: PrimeSim
+*  Design library name: isd_4_bit_cla
+*  Design cell name: isd_final_circuit_test_tb
+*  Design view name: schematic
+.lib '/PDK/SAED_PDK32nm/hspice/saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Fri Feb 25 07:23:43 2022
+
+.global gnd!
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_or2_gate
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_or2_gate in1 in2 out vdd vss
+xm2 out net26 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm1 net26 in2 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm0 net26 in1 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm5 out net26 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm4 net19 in1 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm3 net26 in2 net19 vdd p105 w=0.1u l=0.03u nf=1 m=1
+.ends isd_or2_gate
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_propagate_block
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_propagate_block a0_pg a1_pg a2_pg a3_pg b0_pg b1_pg b2_pg b3_pg p0
++ p1 p2 p3 vdd vss
+xi3 a3_pg b3_pg p3 vdd vss isd_or2_gate
+xi2 a0_pg b0_pg p0 vdd vss isd_or2_gate
+xi1 a1_pg b1_pg p1 vdd vss isd_or2_gate
+xi0 a2_pg b2_pg p2 vdd vss isd_or2_gate
+.ends isd_propagate_block
+
+********************************************************************************
+* Library          : isd_and2_aic_hack
+* Cell             : isd_and2
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_and2 in1 in2 out vdd vss
+xm7 out net66 vdd vdd p105 w=0.1u l=30n nf=1 m=1
+xm2 net66 in1 vdd vdd p105 w=0.1u l=30n nf=1 m=1
+xm1 net66 in2 vdd vdd p105 w=0.1u l=30n nf=1 m=1
+xm5 out net66 vss vss n105 w=0.1u l=30n nf=1 m=1
+xm4 net66 in1 net65 vss n105 w=0.1u l=30n nf=1 m=1
+xm3 net65 in2 vss vss n105 w=0.1u l=30n nf=1 m=1
+.ends isd_and2
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_generate_block
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_generate_block a0_gen a1_gen a2_gen a3_gen b0_gen b1_gen b2_gen
++ b3_gen g0 g1 g2 g3 vdd vss
+xi3 a0_gen b0_gen g0 vdd vss isd_and2
+xi2 a3_gen b3_gen g3 vdd vss isd_and2
+xi1 a1_gen b1_gen g1 vdd vss isd_and2
+xi0 a2_gen b2_gen g2 vdd vss isd_and2
+.ends isd_generate_block
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_sum_block
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_sum_block ci ci1 gi pi si vdd vss
+xm11 si net45 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net13 ci vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm3 net13 pi vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm2 net45 ci1 net13 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm1 net5 ci vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm0 net45 gi net5 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm10 si net45 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm9 net40 ci vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm8 net40 gi vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm7 net45 ci1 net40 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm6 net28 pi vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 net45 ci net28 vdd p105 w=0.1u l=0.03u nf=1 m=1
+.ends isd_sum_block
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_carry1_block
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_carry1_block c0 c1 c1bar g0 p0 vdd vss
+xm8 c1 c1bar vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm2 c1bar p0 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm1 c1bar c0 net5 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm0 net5 g0 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm7 c1 c1bar vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm6 c1bar g0 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm4 net18 c0 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm3 c1bar p0 net18 vss n105 w=0.1u l=0.03u nf=1 m=1
+.ends isd_carry1_block
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_carry2_block
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_carry2_block c0 c2 c2bar g0 g1 p0 p1 vdd vss
+xm8 c2 c2bar vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm7 c2bar p1 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm6 c2bar p0 net25 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm4 net21 g0 net25 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 c2bar c0 net21 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm0 net25 g1 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm14 c2bar g1 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm13 c2bar g0 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm12 net49 p1 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm11 net45 p0 net49 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm10 c2bar c0 net45 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm9 c2 c2bar vss vss n105 w=0.1u l=0.03u nf=1 m=1
+.ends isd_carry2_block
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_carry3_block
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_carry3_block c0 c3 c3bar g0 g1 g2 p0 p1 p2 vdd vss
+xm16 c3bar p2 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm7 c3 c3bar vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm6 c3bar p1 net9 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 c3bar p0 net13 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm4 c3bar c0 net17 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm3 net17 g0 net13 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm2 net13 g1 net9 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm1 net9 g2 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm14 c3bar g1 net49 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm13 c3bar g0 net45 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm12 net49 p2 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm11 net45 p1 net49 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm10 net41 p0 net45 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm9 c3bar c0 net41 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm8 c3 c3bar vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm15 c3bar g2 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+.ends isd_carry3_block
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_carry4_block
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_carry4_block c0 c4 c4bar g0 g1 g2 g3 p0 p1 p2 p3 vdd vss
+xm38 c4 c4bar vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm18 net80 g3 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm19 net84 g2 net80 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm20 net88 g1 net84 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm25 c4bar p2 net80 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm26 c4bar p3 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm21 net92 g0 net88 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm22 c4bar c0 net92 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm23 c4bar p0 net88 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm24 c4bar p1 net84 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm37 c4 c4bar vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm36 c4bar g3 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm35 c4bar g2 net128 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm34 c4bar g1 net124 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm32 c4bar g0 net120 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm31 net128 p3 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm30 net124 p2 net128 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm29 net120 p1 net124 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm28 net116 p0 net120 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm27 c4bar c0 net116 vss n105 w=0.1u l=0.03u nf=1 m=1
+.ends isd_carry4_block
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_final_circuit_test
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt isd_final_circuit_test a0 a1 a2 a3 b0 b1 b2 b3 c0 c4 s0 s1 s2 s3 vdd vss
+xi0 a0 a1 a2 a3 b0 b1 b2 b3 p0 p1 p2 p3 vdd vss isd_propagate_block
+xi1 a0 a1 a2 a3 b0 b1 b2 b3 g0 g1 g2 g3 vdd vss isd_generate_block
+xi7 c3 c4bar g3 p3 s3 vdd vss isd_sum_block
+xi4 c2 c3bar g2 p2 s2 vdd vss isd_sum_block
+xi3 c1 c2bar g1 p1 s1 vdd vss isd_sum_block
+xi2 c0 c1bar g0 p0 s0 vdd vss isd_sum_block
+xi8 c0 c1 c1bar g0 p0 vdd vss isd_carry1_block
+xi9 c0 c2 c2bar g0 g1 p0 p1 vdd vss isd_carry2_block
+xi10 c0 c3 c3bar g0 g1 g2 p0 p1 p2 vdd vss isd_carry3_block
+xi13 c0 c4 c4bar g0 g1 g2 g3 p0 p1 p2 p3 vdd vss isd_carry4_block
+.ends isd_final_circuit_test
+
+********************************************************************************
+* Library          : isd_4_bit_cla
+* Cell             : isd_final_circuit_test_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a0 a1 a2 a3 b0 b1 b2 b3 c0 c4 s0 s1 s2 s3 vdd gnd! isd_final_circuit_test
+v24 c0 gnd! dc=0 pulse ( 0 1.8 4.5n 0.1n 0.1n 4n 8n )
+v25 a0 gnd! dc=0 pulse ( 0 1.8 2n 0.1n 0.1n 5n 10n )
+v26 a1 gnd! dc=0 pulse ( 0 1.8 4n 0.1n 0.1n 5n 10n )
+v29 b0 gnd! dc=0 pulse ( 0 1.8 3.4n 0.1n 0.1n 5n 10n )
+v33 a2 gnd! dc=0 pulse ( 1.8 0 1n 0.1n 0.1n 5n 10n )
+v28 a3 gnd! dc=0 pulse ( 0 1.8 3n 0.1n 0.1n 5n 10n )
+v31 b2 gnd! dc=0 pulse ( 0 1.8 2.2n 0.1n 0.1n 5n 10n )
+v30 b1 gnd! dc=0 pulse ( 0 1.8 4.8n 0.1n 0.1n 4n 8n )
+v32 b3 gnd! dc=0 pulse ( 0 1.8 3.6n 0.1n 0.1n 5n 10n )
+v23 vdd gnd! dc=1.8
+
+.tran '0.5n' '6n' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(a0) v(a1) v(a2) v(a3) v(b0) v(b1) v(b2) v(b3) v(c0) v(c4) v(s0)
++ v(s1) v(s2) v(s3)
+
+.temp 25
+
+.option primesim_output=wdf
+.option parhier = LOCAL
+
+.end
