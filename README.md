@@ -120,21 +120,21 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ## 4 bit CLA adder Symbol:
 ![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155745152-545eb361-e295-4ffb-a3af-eacaef5fbcc9.png)
 
-## Testbench Set up: 
+# Testbench Set up: 
 
-### 1. Input pulse Voltage Source definitions: 
+## 1. Input pulse Voltage Source definitions: 
 ![Parameters set for Voltage Source for Input C0](https://user-images.githubusercontent.com/99788755/155772780-779cf528-3641-4667-a70f-0fcc7b3c1cfe.png)
 
 ![input pulse definitions](https://user-images.githubusercontent.com/99788755/155772743-436913a4-7f7e-4601-a446-55e0f875de36.png)
 
-### 2. Supply voltage definitions: 
+## 2. Supply voltage definitions: 
 ![supply voltage definitions](https://user-images.githubusercontent.com/99788755/155772838-cbbe88bd-a0f4-4a6f-aac8-eb623ec3bb71.png)
 
-### 3. Transient settings: 
+## 3. Transient settings: 
 
 ![transient settings](https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png)
 
-## 4 Bit CLA adder Testbench: 
+# 4 Bit CLA adder Testbench: 
 ![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png)
 
 
