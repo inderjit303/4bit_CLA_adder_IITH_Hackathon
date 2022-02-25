@@ -145,7 +145,7 @@ Fig : Addition of of two 4 bit binary numbers with carry in bit
 ![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
 Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit 
 
-## Verification of binary addition from waveforms: 
+# Verification of binary addition from waveforms: 
 
 The input-output waveforms showcases the addition of of two 4 bit binary numbers with carry in and carry out bits.
 
