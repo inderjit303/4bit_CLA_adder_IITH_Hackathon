@@ -51,6 +51,9 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 
 # Pre-Layout Schematics and Simulations:
 
+## Proposed Modular Design of 4 bit CLA adder using Synopsys Custom Compiler tool:
+![proposed modular CLA](https://user-images.githubusercontent.com/99788755/155766538-c040fbed-48eb-4bfb-ad8c-bcd2949b6744.png)
+
 ## AND2 circuit Schematic: 
 ![AND circuit schematic](https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png)
 
