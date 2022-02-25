@@ -51,7 +51,11 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 
 # Pre-Layout Schematics and Simulations:
 
+## Generate circuit Schematic:
+![Generate circuit Schematic](https://user-images.githubusercontent.com/99788755/155747583-ca3f2362-9c70-4f7d-894d-f2b26cc10d84.png)
 
+## Generate circuit Symbol:
+![Generate circuit symbol](https://user-images.githubusercontent.com/99788755/155747630-9816041f-b89a-43d5-9266-a276b0ca8535.png)
 
 ## Carry 1 circuit Schematic: 
 ![Carry_1_circuit_schematic](https://user-images.githubusercontent.com/99788755/155743857-3bdb0ec0-1d3d-40a3-8099-0ecbbd3b91a4.png)
