@@ -51,6 +51,31 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 
 # Pre-Layout Schematics and Simulations:
 
+## Carry 1 circuit Schematic: 
+![Carry_1_circuit_schematic](https://user-images.githubusercontent.com/99788755/155743857-3bdb0ec0-1d3d-40a3-8099-0ecbbd3b91a4.png)
+
+## Carry 1 circuit symbol:
+![Carry_1_circuit_symbol](https://user-images.githubusercontent.com/99788755/155743913-338ba3a0-8cfd-4aa2-8317-ad67dc92f28c.png)
+
+## Carry 2 circuit Schematic: 
+![Carry_2_circuit_schematic](https://user-images.githubusercontent.com/99788755/155743985-c4f662d4-1fe3-403d-83b8-3a3d0eae7201.png)
+
+## Carry 2 circuit symbol:
+![Carry_2_circuit_symbol](https://user-images.githubusercontent.com/99788755/155744094-c65b6ef7-1f4f-42cc-918e-3101c7b0b279.png)
+
+## Carry 3 circuit schematic:
+![Carry_3_circuit_schematic](https://user-images.githubusercontent.com/99788755/155744165-af2013c4-6fdd-4ba0-a6d0-01e74142ffaf.png)
+
+## Carry 3 circuit symbol"
+![Carry_3_circuit_symbol](https://user-images.githubusercontent.com/99788755/155744230-84080e67-df73-4cbf-b816-b34bac05ca1a.png)
+
+## Carry 4 circuit schematic"
+![Carry_4_circuit_schematic](https://user-images.githubusercontent.com/99788755/155744302-7c84de13-029e-4e1d-b991-7841df6b822c.png)
+
+## Carry 4 circuit symbol:
+
+![Carry_4_circuit_symbol](https://user-images.githubusercontent.com/99788755/155744369-ecd5729c-a834-4972-af4c-4c495b2a830b.png)
+
 
 
 ## Sum circuit Schematic:
