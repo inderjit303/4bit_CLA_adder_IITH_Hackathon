@@ -37,6 +37,8 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 # Reference Circuit Waveforms:
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
 
+![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
+
 
 # Tools Used:
 ## 1. Synopsys Custom Compiler:
