@@ -166,6 +166,6 @@ The input-output waveforms showcases the addition of of two 4 bit binary numbers
 5. Sameer Durgoji, NIT Karnataka
                                   
 # References: 
-[1] M. S. Hossain and F. Arifin, "A Proposed Design of Conventional 4-Bit Carry Look-Ahead Adder Improving Performance," 2020 Advanced Computing and Communication Technologies for High Performance Applications (ACCTHPA), 2020, pp. 89-93, (doi:10.1109/ACCTHPA49271.2020.9213227)
+[1] M. S. Hossain and F. Arifin, "A Proposed Design of Conventional 4-Bit Carry Look-Ahead Adder Improving Performance," 2020 Advanced Computing and Communication Technologies for High Performance Applications (ACCTHPA), 2020, pp. 89-93, doi: 10.1109/ACCTHPA49271.2020.9213227.
 
 [2] Uyemura, J., 2002. Introduction to VLSI circuits and systems. 1st ed. New York: Wiley
