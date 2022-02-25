@@ -51,6 +51,19 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 
 # Pre-Layout Schematics and Simulations:
 
+## AND2 circuit Schematic: 
+![AND circuit schematic](https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png)
+
+## AND2 circuit symbol: 
+![AND circuit symbol](https://user-images.githubusercontent.com/99788755/155751191-6667ac3f-97a2-42bf-ab1d-221102150a2f.png)
+
+## OR2 circuit Schematic:
+![OR circuit schematic](https://user-images.githubusercontent.com/99788755/155751255-2febc6bd-85d6-4849-9353-0f51b6bf404c.png)
+
+## OR2 circuit symbol:
+![OR circuit symbol](https://user-images.githubusercontent.com/99788755/155751304-24691eca-c306-4407-9b44-9f327aee8c1a.png)
+
+
 ## Propagate circuit Schematic: 
 ![Propagate circuit schematic](https://user-images.githubusercontent.com/99788755/155748575-bc963bec-af7a-40e2-939e-6eea7e4c23d3.png)
 
