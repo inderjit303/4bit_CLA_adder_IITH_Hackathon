@@ -56,20 +56,28 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 
 
 
+
+
+## 4 Bit CLA adder Testbench 
+![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155679929-1b400081-4916-409b-bb85-4aed1bb831a6.png)
+
+
+
+
+
 # Simulations: 
 
-## Transient analysis
 
+## Transient analysis:
 1. After creating and saving the 4 bit CLA adder schematic testbench, go to 'Tools' and open 'Primewave' to start the simulation. 
 2. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file present in the HSPICE folder. 
 3. After this click on the analyses and select the 'tran' (Transient) analysis in the analysis window and give the 'Start Time', 'Stop Time', and 'Time step' parameters and save it. 
 4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns 
 5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
-
 ![Input_output transient waveforms](https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png)
                                   Fig : Addition of of two 4 bit binary numbers with carry in bit 
-
+                                
 ![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
                                   Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit 
                                   
