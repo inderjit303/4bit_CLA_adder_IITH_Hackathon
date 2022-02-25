@@ -3,7 +3,8 @@ This repository presents step-wise design and simulation guide for implementing 
 
 # Table of Contents: 
 1. [Abstract](#abstract)
-2. [Reference circuit details](#Reference circuit details)
+2. [Reference circuit details](#reference-circuit-details)
+3. [Reference circuit Design](#reference-circuit-design)
 
 # Abstract:
 This report presents a transistor-level implementation of a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic. CLA adder design overcomes the delay issue in 
