@@ -66,15 +66,15 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ## Carry 3 circuit schematic:
 ![Carry_3_circuit_schematic](https://user-images.githubusercontent.com/99788755/155744165-af2013c4-6fdd-4ba0-a6d0-01e74142ffaf.png)
 
-## Carry 3 circuit symbol"
+## Carry 3 circuit symbol:
 ![Carry_3_circuit_symbol](https://user-images.githubusercontent.com/99788755/155744230-84080e67-df73-4cbf-b816-b34bac05ca1a.png)
 
-## Carry 4 circuit schematic"
-![Carry_4_circuit_schematic](https://user-images.githubusercontent.com/99788755/155744302-7c84de13-029e-4e1d-b991-7841df6b822c.png)
+## Carry 4 circuit schematic:
+
+![Carry_4_circuit_schematic](https://user-images.githubusercontent.com/99788755/155745409-677f496b-51dd-4fff-b1b2-afd6c67be62f.png)
 
 ## Carry 4 circuit symbol:
-
-![Carry_4_circuit_symbol](https://user-images.githubusercontent.com/99788755/155744369-ecd5729c-a834-4972-af4c-4c495b2a830b.png)
+![Carry_4_circuit_symbol](https://user-images.githubusercontent.com/99788755/155745457-4d885b0e-e872-42c3-8531-5ac5c96dc68f.png)
 
 
 ## Sum circuit Schematic:
@@ -84,14 +84,15 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ![Sum_circuit_symbol](https://user-images.githubusercontent.com/99788755/155740537-aa450801-15aa-4faf-af15-dd625e789964.png)
 
 ## 4 bit CLA adder Schematic:
+![4_bit_CLA_adder_schematic](https://user-images.githubusercontent.com/99788755/155745365-f6fb3a18-5d39-4a5d-937b-1b7739b775e1.png)
 
-![4_bit_CLA_adder_schematic](https://user-images.githubusercontent.com/99788755/155744716-7b8413c9-5c1d-426a-a1d6-b710813e325d.png)
+
 
 ## 4 bit CLA adder Symbol:
-![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155744744-045a9169-68c6-415e-a447-a519745f412b.png)
+![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155745152-545eb361-e295-4ffb-a3af-eacaef5fbcc9.png)
 
 ## 4 Bit CLA adder Testbench: 
-![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155744769-3df1ec95-81e7-4882-b4a5-268c3a26060b.png)
+![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png)
 
 
 
@@ -108,6 +109,7 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns 
 5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
+
 ![Input_output transient waveforms](https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png)
                                   Fig : Addition of of two 4 bit binary numbers with carry in bit 
                                 
