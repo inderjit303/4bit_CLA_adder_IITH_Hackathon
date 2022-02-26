@@ -25,7 +25,7 @@ conventional RCA adder by eliminating the cascading effect of the carry bits. Th
 </p>
 
 <p align="left">
-<img src="https://user-images.githubusercontent.com/99788755/155841733-2c06e497-2d99-4739-9555-c0e07d7d5d38.png">
+<img src="https://user-images.githubusercontent.com/99788755/155841777-9392ae0b-d705-4003-97b6-fbfe57981796.png">
 </p>
 
 
