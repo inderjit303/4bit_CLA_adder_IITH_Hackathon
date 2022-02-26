@@ -5,10 +5,11 @@ This repository presents step-wise design and simulation guide for implementing 
 1. [Abstract](#abstract)
 2. [Reference circuit details](#reference-circuit-details)
 3. [Reference circuit Design](#reference-circuit-design)
+4. 
 
-# Abstract:
+# Introduction:
 This report presents a transistor-level implementation of a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic. CLA adder design overcomes the delay issue in 
-conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. Simulations are carried out in 28nm PDK using Synopsy Custom Compiler and PrimeWave tool.
+conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. The design has been created on Synopsis [Custom Compiler ](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html) software and simulated using PrimeWave environment.
 
 # Reference circuit details: 
 Proposed 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms [1]. 
@@ -43,8 +44,6 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ![4_bit_CLA_reference_circuit_Sum_circuit](https://user-images.githubusercontent.com/99788755/155376689-c864cc61-00f6-4f49-b065-4de74ad08c48.jpg)
 # Reference Circuit Waveforms:
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
-
-
 
 # Tools Used:
 ## 1. Synopsys Custom Compiler:
@@ -177,7 +176,7 @@ The input-output waveforms showcases the addition of of two 4 bit binary numbers
 
 
 # Author:
-Inderjit Singh Dhanjal, Assitant Professor, K.J Somaiya College of Engineering, Mumbai
+Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering, Mumbai
 
 # Acknowledgements:
 1. Cloud Based Analog IC Design Hackathon (https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
