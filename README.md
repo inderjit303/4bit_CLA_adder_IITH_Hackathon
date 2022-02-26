@@ -180,7 +180,7 @@ Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering,
 
 # Acknowledgements:
 1. Cloud Based Analog IC Design Hackathon (https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
-2. Synopsys India (https://www.synopsys.com/)
+2. [Synopsys India](https://www.synopsys.com/)
 3. [Kunal Ghosh, Co-founder, VSD Corp. Pvt Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0xcWjpLDThSEo6S9UPO9Tw%3D%3D)
 4. Chinmay panda, IIT Hyderabad
 5. Sameer Durgoji, NIT Karnataka
