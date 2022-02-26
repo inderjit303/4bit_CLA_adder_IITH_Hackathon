@@ -44,12 +44,20 @@ This means every carry bit can be found from generate and propagate terms.
 <img src="https://user-images.githubusercontent.com/99788755/155376043-11b716f8-78fb-4533-ab44-7f2f3ff8dd24.jpg">
 </p>
 <p align="center">
-Fig 1. Carry circuit
+Fig 2. Carry circuit
 </p>
 
 ### 3.  Sum circuit of 4 bit CLA adder:
-![4_bit_CLA_reference_circuit_Sum_circuit](https://user-images.githubusercontent.com/99788755/155376689-c864cc61-00f6-4f49-b065-4de74ad08c48.jpg)
+Fig 3. shows sum circuit block implemented using CMOS mirror logic for 4 bit CLA adder. The sum circuit is implemented based on the following equation 
+Si = GiCi + (Ci+1)bar (Pi+Ci)\
+This means every sum bit can be found from generate, propagate terms and carry terms. 
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155376689-c864cc61-00f6-4f49-b065-4de74ad08c48.jpg">
+</p>
+<p align="center">
+Fig 3. Sum circuit
+</p>
 
 ## Reference Circuit Waveforms:
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
