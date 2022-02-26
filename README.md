@@ -78,15 +78,21 @@ Fig 4. Reference circuit waveforms
 ## Proposed Modular Design of 4 bit CLA adder using Synopsys Custom Compiler tool:
 To implement 4 bit CLA adder using CMOS mirror logic, modular design apporach is adopted. Modular design approach is a design principle that subdivides a system into smaller parts called modules/blocks, which can be independently created, modified, replaced, or exchanged with other modules/blocks or reused in other systems.
 
-Proposed modular design shown in Fig 5. subdivides 4 bit CLA adder IP block in smaller circuit blocks, i.e carry circuit, sum circuit, generate circuit, and propagate circuit blocks. Further, generate circuit block is divided into AND circuit block and propagate circuit block is divided into OR circuit block. 
-
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155844920-e582ce81-38ad-4885-857e-493f073d6892.png">
+<img src="https://user-images.githubusercontent.com/99788755/155846434-2f61e09a-5dd9-43d3-8304-7ce4a8028f57.png">
 </p>
 <p align="center">
 Fig 5. Proposed Modular design of 4 bit CLA adder
 </p>
 
+Proposed modular design shown in Fig 5. subdivides 4 bit CLA adder IP block in smaller circuit blocks, i.e carry circuit, sum circuit, generate circuit, and propagate circuit blocks. Further, generate circuit block is divided into AND circuit block and propagate circuit block is divided into OR circuit block. Fig. 6 shows proposed 4 bit CLAD adder design IP. 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155844920-e582ce81-38ad-4885-857e-493f073d6892.png">
+</p>
+<p align="center">
+Fig 6. 4 bit CLA adder IP
+</p>
 
 ## AND2 circuit Schematic: 
 <p align="center" width="100%">
