@@ -353,7 +353,7 @@ Fig 30. Transient setting
 Fig. 31 shows the 4 bit CLA adder input and output waveforms. Among the inputs, C0 is carry in bit, A0-A3 is 4 bit binary number, B0-B3 is 4 bit binary number and among the outputs is S0-S3, a 4 bit Sum and C4 is carry out bit. Fig 32 shows expanded view of the 4 bit CLA adder input output waveforms.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png">
+<img src="https://user-images.githubusercontent.com/99788755/155856332-719a775e-305b-4a17-9f26-e8df451ef699.png">
 </p> 
 <p align="center">
 Fig 31. 4 bit CLA adder input output waveforms 
