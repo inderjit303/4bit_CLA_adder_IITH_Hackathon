@@ -3,18 +3,19 @@ This repository presents step-wise design and simulation guide for implementing 
 
 # Table of Contents: 
 1. [Introduction](#introduction)
-2. [Circuit Design](#circuit-design)
-3. [Simulation Results](#simulation-results)
-4. [Conclusion](#conclusion)
-5. [Author](#author)
-6. [Acknowledgements](#acknowledgements)
-7. [References](#references)
+2. [Reference circuit details](#reference-circuit-details)
+3. [Pre Layout Circuit Design](#pre-layout-circuit-design)
+4. [Simulation Results](#simulation-results)
+5. [Conclusion](#conclusion)
+6. [Author](#author)
+7. [Acknowledgements](#acknowledgements)
+8. [References](#references)
 
 # Introduction:
 This repository presents a transistor-level implementation of a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic. CLA adder design overcomes the delay issue in 
 conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. The design has been created on Synopsis [Custom Compiler ](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html) software and simulated using [PrimeWave](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primewave.html) environment.
 
-## Reference circuit details: 
+# Reference circuit details: 
 A 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms. 
 
 For every bit i,
@@ -56,7 +57,7 @@ Fig 1. Generate and Propagate reference circuit
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
 
 
-# Circuit Design: 
+# Pre Layout Circuit Design: 
 
 ## Proposed Modular Design of 4 bit CLA adder using Synopsys Custom Compiler tool:
 ![proposed modular CLA](https://user-images.githubusercontent.com/99788755/155766538-c040fbed-48eb-4bfb-ad8c-bcd2949b6744.png)
