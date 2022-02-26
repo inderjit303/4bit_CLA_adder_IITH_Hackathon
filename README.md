@@ -155,7 +155,7 @@ Fig 12. Propagate circuit Symbol
 </p>
 
 ## Generate circuit Schematic:
-Next, we design the generate circuit schematic using static CMOS logic as shown in Fig. 13. The generate block is implemented as per design equation Gi = AiBi. Using AND2 circuit block named 'isd_and2' with two input pins, one output pin and supply pins, propagate terms G0, G1, G2 and G3 are implemented utilizing modular design. 
+Next, we design the generate circuit schematic using static CMOS logic as shown in Fig. 13. The generate block is implemented as per design equation Gi = AiBi. Using AND2 circuit block named 'isd_and2' with two input pins, one output pin and supply pins, generate terms G0, G1, G2 and G3 are implemented utilizing modular design. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155747583-ca3f2362-9c70-4f7d-894d-f2b26cc10d84.png">
@@ -165,7 +165,7 @@ Fig 13. Generate circuit schematic
 </p>
 
 ## Generate circuit Symbol:
-Fig 14. shows generate circuit block symbol named 'isd_generate_block'. It consists of eight input pins A0_pg to A3_pg, B0_pg to B3_pg, four output pins P0-P3 and supply pins Vdd and VSS.
+Fig 14. shows generate circuit block symbol named 'isd_generate_block'. It consists of eight input pins A0_pg to A3_pg, B0_pg to B3_pg, four output pins G0-G3 and supply pins Vdd and VSS.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155747630-9816041f-b89a-43d5-9266-a276b0ca8535.png">
