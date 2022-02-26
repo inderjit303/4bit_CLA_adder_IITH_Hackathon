@@ -36,9 +36,9 @@ Fig 1. Generate and Propagate reference circuit
 </p>
  
 ### 2. Carry circuit of 4 bit CLA adder:
-Fig 2. shows carry circuit block implemented using CMOS mirror logic for 4 bit CLA adder. The carry circuit is implemented based on the following equation\
+Fig 2. shows carry circuit block implemented using CMOS mirror logic for 4 bit CLA adder. The carry circuit is implemented based on the following equation
 
-Ci+1 = Gi + PiCi\
+Ci+1 = Gi + PiCi
 
 This means every carry bit can be found from generate and propagate terms.
 
@@ -50,9 +50,9 @@ Fig 2. Carry circuit
 </p>
 
 ### 3.  Sum circuit of 4 bit CLA adder:
-Fig 3. shows sum circuit block implemented using CMOS mirror logic for 4 bit CLA adder. The sum circuit is implemented based on the following equation\
+Fig 3. shows sum circuit block implemented using CMOS mirror logic for 4 bit CLA adder. The sum circuit is implemented based on the following equation
 
-Si = GiCi + (Ci+1)bar (Pi+Ci)\
+Si = GiCi + (Ci+1)bar (Pi+Ci)
 
 This means every sum bit can be found from generate, propagate terms and carry terms. 
 
