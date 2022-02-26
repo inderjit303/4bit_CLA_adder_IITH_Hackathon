@@ -4,7 +4,7 @@ This repository presents step-wise design and simulation guide for implementing 
 # Table of Contents: 
 1. [Introduction](#introduction)
 2. [Circuit Design](#circuit-design)
-3. [Simulation Results](#simulation-results]
+3. [Simulation Results](#simulation-results)
 4. [Conclusion](#conclusion)
 5. [Author](#author)
 6. [Acknowledgements](#acknowledgments)
@@ -12,7 +12,7 @@ This repository presents step-wise design and simulation guide for implementing 
 
 # Introduction:
 This report presents a transistor-level implementation of a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic. CLA adder design overcomes the delay issue in 
-conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. The design has been created on Synopsis [Custom Compiler ](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html) software and simulated using [PrimeWave](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primewave.html) environment. The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the 4 bit CLA adder circuit.
+conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. The design has been created on Synopsis [Custom Compiler ](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html) software and simulated using [PrimeWave](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primewave.html) environment.
 
 ## Reference circuit details: 
 Proposed 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms [1]. 
@@ -138,8 +138,6 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ## 4 Bit CLA adder Testbench: 
 ![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png)
 
-
-
 # Simulation Results: 
 
 ## Transient analysis:
@@ -169,7 +167,7 @@ The input-output waveforms showcases the addition of of two 4 bit binary numbers
 
 ![binary addition time 3](https://user-images.githubusercontent.com/99788755/155765490-ccfc6c31-928e-4db0-b695-8e669bc3e195.png)
 
-# Conclusion
+# Conclusion:
 
 # Author:
 Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering, Mumbai
