@@ -255,7 +255,7 @@ Fig 22. Carry 4 circuit symbol
 </p>
 
 ## Sum circuit Schematic:
-Sum circuit schematic using CMOS mirror logic is shown in Fig. 23. The sum circuit block is implemented as per design equation Si = GiCi + (Ci+1)bar (Pi+Ci). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Carry 4 circuit schematic consists of 20 transistors. 
+Sum circuit schematic using CMOS mirror logic is shown in Fig. 23. The sum circuit block is implemented as per design equation Si = GiCi + (Ci+1)bar (Pi+Ci). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Sum circuit schematic consists of 12 transistors. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155740407-7775bf1e-116f-4afb-9e3d-9d771080c4a2.png">
@@ -265,7 +265,7 @@ Fig 23. Sum circuit symbol
 </p>
 
 ## Sum circuit Symbol:
-Fig 24. shows sum circuit block symbol named 'isd_carry4_block'. It consists of seven input pins C0, P0, P1, P2, P3,G0, G1, G2 & G3, two output pins C4 & C4bar and supply pins vdd & vss.
+Fig 24. shows sum circuit block symbol named 'isd_sum_block'. It consists of four input pins Ci, Ci1, Gi, & Pi, one output pin Si and supply pins vdd & vss.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155740537-aa450801-15aa-4faf-af15-dd625e789964.png">
@@ -275,12 +275,23 @@ Fig 24. Sum circuit symbol
 </p>
 
 ## 4 bit CLA adder Schematic:
-![4_bit_CLA_adder_schematic](https://user-images.githubusercontent.com/99788755/155745365-f6fb3a18-5d39-4a5d-937b-1b7739b775e1.png)
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155745365-f6fb3a18-5d39-4a5d-937b-1b7739b775e1.png">
+</p> 
+<p align="center">
+Fig 25. 4 bit CLA adder schematic
+</p>
 
 
 ## 4 bit CLA adder Symbol:
-![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155745152-545eb361-e295-4ffb-a3af-eacaef5fbcc9.png)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155745152-545eb361-e295-4ffb-a3af-eacaef5fbcc9.png">
+</p> 
+<p align="center">
+Fig 26. 4 bit CLA adder symbol
+</p>
 
 ## Testbench Set up: 
 
