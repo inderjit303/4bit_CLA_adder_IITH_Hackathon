@@ -21,6 +21,10 @@ conventional RCA adder by eliminating the cascading effect of the carry bits. Th
 ## Reference circuit Design:
 
 <p align="left">
+<img src="https://user-images.githubusercontent.com/99788755/155841865-4cd1c547-75fe-4bcf-a575-fd1c0024d506.png">
+</p>
+
+<p align="left">
 <img src="https://user-images.githubusercontent.com/99788755/155841670-6c57b32d-b925-485c-aac9-cc7c6e6c37e5.png">
 </p>
 
