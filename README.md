@@ -316,7 +316,7 @@ Fig 28. Input pulse definitions
 </p>
 
 ### 2. Supply voltage definitions: 
-In modular design, all the modules/block require a steady DC source, since a 28nm PDK Technology node of Synopsys was adopted, a 1.8V supply is considered for the design.\
+In modular design, all the modules/blocks require a steady DC source, since a 28nm PDK Technology node of Synopsys was adopted, a 1.8V supply is considered for the design.
 
 vdc = 1.8V 
 
