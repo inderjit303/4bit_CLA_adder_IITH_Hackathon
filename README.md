@@ -135,9 +135,7 @@ Fig 10. OR2 circuit symbol
 </p>
 
 ## Propagate circuit Schematic: 
-Next, we design a propagate block using static CMOS logic as shown in Fig. 10. 
-
-First, an two input NOR gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an OR2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
+Next, we design the propagate circuit schematic using static CMOS logic as shown in Fig. 11. The propagate block is implemented as per design equation Pi = Ai+Bi. Using OR2 circuit block named 'isd_or2_gate' with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS, propagate terms P0, P1, P2 and P3 are implemented utilizing modular design. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155748575-bc963bec-af7a-40e2-939e-6eea7e4c23d3.png">
@@ -147,6 +145,7 @@ Fig 11. Propagate circuit Schematic
 </p>
 
 ## Propagate circuit Symbol: 
+Fig 12. shows propagate circuit block symbol named 'isd_propagate_block'. It consists of eight input pins A0_pg to A3_pg, B0_pg to B3_pg, four output pins P0-P3 and supply pins VDD and Vss.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155748620-b7292100-0fbb-4952-b5a2-7afe6166a9ae.png">
