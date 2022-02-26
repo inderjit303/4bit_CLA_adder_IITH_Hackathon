@@ -276,7 +276,7 @@ Fig 24. Sum circuit symbol
 ## 4 bit CLA adder Schematic:
 
 Finally, integrating the various block together, we achieve final schematic of 4 bit CLA adder modular design as shown in Fig 25. All 8 inputs A0-A3 and B0-B3 are applied to generate and propagate blocks. The outputs from generate and propgate blocks are G0-G3 and P0-P3. 
-With the help of propagate and generate terms, sum and carry bits are evaluated in a faster way. Four sum circuit blocks and carry 1 to carry 4 circuit blocks are interconnected together to achieve a 4 bit CLA adder.
+With the help of propagate and generate terms, sum and carry bits are evaluated in a faster way. Four sum circuit blocks and carry 1 to carry 4 circuit blocks are interconnected together to achieve a 4 bit CLA adder. Total transistor count for proposed modular 4 bit CLA adder is 152. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745365-f6fb3a18-5d39-4a5d-937b-1b7739b775e1.png">
@@ -323,7 +323,7 @@ vdc = 1.8V
 vss = 0V 
 
 ## 4 Bit CLA adder Testbench: 
-Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with appropriate input pulses acting as inputs for the CLA adder, and supply voltages. Further steps after creation and executing testbench results are elaborated in simulation results 
+Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with appropriate input pulses acting as inputs for the CLA adder, and supply voltages. Further steps after creation and executing testbench results are elaborated in simulation results.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png">
@@ -367,7 +367,7 @@ Fig 32. Expanded view of 4 bit CLA adder input output waveforms
 </p>
 
 ## Verification of binary addition from waveforms: 
-From the simulated input-output waveforms, the addition of two 4 bit binary numbers with carry in and carry out bits is verified. The proposed design adds two 4-bit binary numbers and generate a carry out bit if the sum exceeds 15 which clearly visible from timing waveforms shown in Fig. 34
+From the simulated input-output waveforms, the addition of two 4 bit binary numbers with carry in and carry out bits is verified. Fig. 33 shows the binary addition process of two 4 bit numbers. The proposed design adds two 4-bit binary numbers and generate a carry out bit if the sum exceeds 15 which clearly visible from timing waveforms shown in Fig. 34
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png">
@@ -390,7 +390,7 @@ Fig 34. Binary addition of 4 bit numbers by time frame
 # Conclusion:
 1. The repository presents the design and simulation of 4 bit CLA adder using CMOS mirror logic on 28nm technology node of Synopsys.
 2. Modular design adopted was successful and 4 bit binary addition is verified from output waveforms. The proposed circuit add two 4-bit binary numbers and generates a carry out bit if the sum exceeds 15
-3. Adopting Mirror logic reduced the transistor count in comparison with static CMOS logic. 
+3. Adopting CMOS Mirror logic for 4 bit CLA adder have reduced the transistor count from 178 to 152 in comparison with static CMOS logic. 
 
 # Author:
 Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering, Mumbai
