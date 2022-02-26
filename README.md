@@ -276,7 +276,7 @@ Fig 24. Sum circuit symbol
 ## 4 bit CLA adder Schematic:
 
 Finally, integrating the various block together, we achieve final schematic of 4 bit CLA adder modular design as shown in Fig 25. All 8 inputs A0-A3 and B0-B3 are applied to generate and propagate blocks. The outputs from generate and propgate blocks are G0-G3 and P0-P3. 
-With the help of propagate and generate terms, sum and carry bits are evaluated in a faster way. Four sum circuit blocks and carry 1 to carry 4 circuit blocks are interconnected together to achieve a 4 bit CLA adder. Total transistor count for proposed modular 4 bit CLA adder is 152. 
+With the help of propagate and generate terms, sum and carry bits are evaluated in a faster way. Four sum circuit blocks and carry 1 to carry 4 circuit blocks are interconnected together to achieve a 4 bit CLA adder. Total transistor count for the 4 bit CLA adder design is 152. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745365-f6fb3a18-5d39-4a5d-937b-1b7739b775e1.png">
