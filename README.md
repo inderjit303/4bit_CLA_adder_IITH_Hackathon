@@ -89,14 +89,20 @@ Proposed modular design shown in Fig 5. subdivides 4 bit CLA adder IP block in s
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155846835-cf319b46-a88a-4cf8-8d91-cc7ccbc78bc9.png">
-</p>
+</p> 
 <p align="center">
 Fig 6. 4 bit CLA adder IP
 </p>
 
 ## AND2 circuit Schematic: 
-<p align="center" width="100%">
-    <img width="70%" src="https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png"> 
+
+We start our modular design approach by designing two input AND circuit block using static CMOS logic as shown in Fig. 7 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png">
+</p> 
+<p align="center">
+Fig 7. AND2 circuit schematic 
 </p>
 
 ## AND2 circuit symbol: 
