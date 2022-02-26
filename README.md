@@ -25,8 +25,9 @@ conventional RCA adder by eliminating the cascading effect of the carry bits. Th
 </p>
 
 <p align="left">
-<img src="https://user-images.githubusercontent.com/99788755/155841579-03781580-ff49-4cae-9cbe-bd4b41ecb209.png">
+<img src="https://user-images.githubusercontent.com/99788755/155841733-2c06e497-2d99-4739-9555-c0e07d7d5d38.png">
 </p>
+
 
 ### 1. Generate and Propagate circuit of 4 bit CLA adder:
 
