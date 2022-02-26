@@ -7,7 +7,7 @@ This repository presents step-wise design and simulation guide for implementing 
 3. [Simulation Results](#simulation-results)
 4. [Conclusion](#conclusion)
 5. [Author](#author)
-6. [Acknowledgements](#acknowledgments)
+6. [Acknowledgements](#acknowledgements)
 7. [References](#references)
 
 # Introduction:
@@ -15,7 +15,7 @@ This report presents a transistor-level implementation of a 4-bit carry look-ahe
 conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. The design has been created on Synopsis [Custom Compiler ](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html) software and simulated using [PrimeWave](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primewave.html) environment.
 
 ## Reference circuit details: 
-Proposed 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms [1]. 
+A 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms [1]. 
 
 For every bit i,
 
