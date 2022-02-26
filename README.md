@@ -2,13 +2,13 @@
 This repository presents step-wise design and simulation guide for implementing 4-bit carry look-ahead (CLA) adder using CMOS mirror logic in 28nm PDK using Synopsy Custom Compiler and Primesim Tool.
 
 # Table of Contents: 
-1. [Introduction](#introduction)
-2. [Circuit Design](#circuit-design)
-3. [Simulation Results](#simulation-results)
-4. [Conclusion](#conclusion)
-5. [Author](#author)
-6. [Acknowledgements](#acknowledgements)
-7. [References](#references)
+1. [Introduction](https://github.com/inderjit303/4bit_CLA_adder_IITH_Hackathon/edit/main/README.md#table-of-contents#introduction)
+2. [Circuit Design](https://github.com/inderjit303/4bit_CLA_adder_IITH_Hackathon/edit/main/README.md#table-of-contents#circuit-design)
+3. [Simulation Results](https://github.com/inderjit303/4bit_CLA_adder_IITH_Hackathon/edit/main/README.md#table-of-contents#simulation-results)
+4. [Conclusion](https://github.com/inderjit303/4bit_CLA_adder_IITH_Hackathon/edit/main/README.md#table-of-contents#conclusion)
+5. [Author](https://github.com/inderjit303/4bit_CLA_adder_IITH_Hackathon/edit/main/README.md#table-of-contents#author)
+6. [Acknowledgements](https://github.com/inderjit303/4bit_CLA_adder_IITH_Hackathon/edit/main/README.md#table-of-contents#acknowledgements)
+7. [References](https://github.com/inderjit303/4bit_CLA_adder_IITH_Hackathon/edit/main/README.md#table-of-contents#references)
 
 # Introduction:
 This report presents a transistor-level implementation of a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic. CLA adder design overcomes the delay issue in 
