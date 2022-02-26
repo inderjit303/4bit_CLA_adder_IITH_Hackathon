@@ -205,7 +205,7 @@ Fig 17. Carry 2 circuit schematic
 </p>
 
 ## Carry 2 circuit symbol:
-Fig 18. shows carry 2 circuit block symbol named 'isd_carry2_block'. It consists of six input pins C0, C2, P0, P1, G0 & G1, two output pins C2 & C2bar and supply pins vdd & vss.
+Fig 18. shows carry 2 circuit block symbol named 'isd_carry2_block'. It consists of five input pins C0, P0, P1, G0 & G1, two output pins C2 & C2bar and supply pins vdd & vss.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155744094-c65b6ef7-1f4f-42cc-918e-3101c7b0b279.png">
@@ -225,7 +225,7 @@ Fig 19. Carry 3 circuit schematic
 </p>
 
 ## Carry 3 circuit symbol:
-Fig 20. shows carry 3 circuit block symbol named 'isd_carry3_block'. It consists of eight input pins C0, C3, P0, P1, P2, G0, G1 & G2, two output pins C3 & C3bar and supply pins vdd & vss.
+Fig 20. shows carry 3 circuit block symbol named 'isd_carry3_block'. It consists of seven input pins C0, P0, P1, P2, G0, G1 & G2, two output pins C3 & C3bar and supply pins vdd & vss.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155744230-84080e67-df73-4cbf-b816-b34bac05ca1a.png">
@@ -235,11 +235,24 @@ Fig 20. Carry 3 circuit symbol
 </p>
 
 ## Carry 4 circuit schematic:
+Carry 4 circuit schematic using CMOS mirror logic is shown in Fig. 21. The circuit 4 block is implemented as per design equation C4 = G3 + P3(G2 + P2(G1 + P1(G0 + P0C0))). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Carry 4 circuit schematic consists of 20 transistors. 
 
-![Carry_4_circuit_schematic](https://user-images.githubusercontent.com/99788755/155745409-677f496b-51dd-4fff-b1b2-afd6c67be62f.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155745409-677f496b-51dd-4fff-b1b2-afd6c67be62f.png">
+</p> 
+<p align="center">
+Fig 21. Carry 4 circuit schematic
+</p>
 
 ## Carry 4 circuit symbol:
-![Carry_4_circuit_symbol](https://user-images.githubusercontent.com/99788755/155745457-4d885b0e-e872-42c3-8531-5ac5c96dc68f.png)
+Fig 22. shows carry 4 circuit block symbol named 'isd_carry4_block'. It consists of seven input pins C0, P0, P1, P2, P3,G0, G1, G2 & G3, two output pins C4 & C4bar and supply pins vdd & vss.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155745457-4d885b0e-e872-42c3-8531-5ac5c96dc68f.png">
+</p> 
+<p align="center">
+Fig 22. Carry 4 circuit symbol
+</p>
 
 
 ## Sum circuit Schematic:
