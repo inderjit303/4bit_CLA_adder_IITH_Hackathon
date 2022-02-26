@@ -25,6 +25,8 @@ conventional RCA adder by eliminating the cascading effect of the carry bits. Th
 </p>
 
 ### 1. Generate and Propagate circuit of 4 bit CLA adder:
+Fig 1 shows generate and propgate circuit blocks implemented using static CMOS logic. Generate circuit block emulates AND operation i.e Gi = AiBi, thus requiring 6x4= 24 transistors. Propagate circuit block emulates OR operation i.e Pi = Ai+Bi, thus requiring 6x4= 24 transistors. Note i goes from 0 to 3. 
+
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155375356-f33f86ed-de48-4c54-8fc0-4a05b6a2e078.jpg">
