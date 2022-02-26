@@ -95,7 +95,7 @@ Fig 6. 4 bit CLA adder IP
 </p>
 
 ## AND2 circuit Schematic: 
-We start our modular design approach by designing two input AND circuit block using static CMOS logic as shown in Fig. 7. First, an two input NAND gate is implemented using static CMOS design followed connecting a CMOS inverter to make it an AND2 circuit with two input pins In1 & In2, one output pin Out and supply pins Vdd and Vss. The substrate/boby terminal of all NMOS transistors are connected to Vss and substrate/boby terminal of all PMOS transistors are connected to Vdd.
+We start our modular design approach by designing two input AND circuit block using static CMOS logic as shown in Fig. 7. First, an two input NAND gate is implemented using static CMOS design followed connecting a CMOS inverter to make it an AND2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png">
@@ -105,7 +105,7 @@ Fig 7. AND2 circuit schematic
 </p>
 
 ## AND2 circuit symbol: 
-Fig 8. shows AND2 circuit block symbol which is the requirement for the modular design. The AND2 circuit block clearly shows two input pins In1 & In2, one output pin Out and supply pins Vdd and Vss.
+Fig 8. shows AND2 circuit block symbol which is the requirement for the modular design. The AND2 circuit block clearly shows two input pins In1 & In2, one output pin Out and supply pins VDD and VSS.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751191-6667ac3f-97a2-42bf-ab1d-221102150a2f.png">
