@@ -73,7 +73,7 @@ Fig 4. shows reference circuit waveforms which demonstrates the addition of two 
 Fig 4. Reference circuit waveforms
 </p>
 
-# Pre Layout Circuit Design: 
+# Pre-Layout Circuit Design: 
 
 ## Proposed Modular Design of 4 bit CLA adder using Synopsys Custom Compiler tool:
 To implement 4 bit CLA adder using CMOS mirror logic, modular design apporach is adopted. Modular design approach is a design principle that subdivides a system into smaller parts called modules/blocks, which can be independently created, modified, replaced, or exchanged with other modules/blocks or reused in other systems.
