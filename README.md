@@ -95,7 +95,7 @@ Fig 6. 4 bit CLA adder IP
 </p>
 
 ## AND2 circuit Schematic: 
-We start our modular design approach by designing two input AND circuit block using static CMOS logic as shown in Fig. 7. First, an two input NAND gate is implemented using static CMOS design followed connecting a CMOS inverter to make it an AND2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
+We start our modular design approach by designing two input AND circuit block using static CMOS logic as shown in Fig. 7. First, an two input NAND gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an AND2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png">
@@ -115,11 +115,24 @@ Fig 8. AND2 circuit symbol
 </p>
 
 ## OR2 circuit Schematic:
-![OR circuit schematic](https://user-images.githubusercontent.com/99788755/155751255-2febc6bd-85d6-4849-9353-0f51b6bf404c.png)
+Next, we design a two input OR circuit block using static CMOS logic as shown in Fig. 9. First, an two input NOR gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an OR2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155751255-2febc6bd-85d6-4849-9353-0f51b6bf404c.png">
+</p> 
+<p align="center">
+Fig 9. OR2 circuit schematic 
+</p>
 
 ## OR2 circuit symbol:
-![OR circuit symbol](https://user-images.githubusercontent.com/99788755/155751304-24691eca-c306-4407-9b44-9f327aee8c1a.png)
+Fig 10. shows OR2 circuit block symbol named 'isd_or2' which is the requirement for the modular design. The OR2 circuit block clearly shows the two input pins In1 & In2, one output pin Out and supply pins VDD and VSS.
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155751304-24691eca-c306-4407-9b44-9f327aee8c1a.png">
+</p> 
+<p align="center">
+Fig 10. OR2 circuit symbol 
+</p>
 
 ## Propagate circuit Schematic: 
 ![Propagate circuit schematic](https://user-images.githubusercontent.com/99788755/155748575-bc963bec-af7a-40e2-939e-6eea7e4c23d3.png)
