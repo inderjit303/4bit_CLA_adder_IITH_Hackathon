@@ -36,9 +36,21 @@ Fig 1. Generate and Propagate reference circuit
 </p>
  
 ### 2. Carry circuit of 4 bit CLA adder:
-![4_bit_CLA_reference_circuit_Carry_circuit](https://user-images.githubusercontent.com/99788755/155376043-11b716f8-78fb-4533-ab44-7f2f3ff8dd24.jpg)
+Fig 2. shows carry circuit block implemented using CMOS mirror logic for 4 bit CLA adder. The carry circuit is implemented based on the following equation 
+Ci+1 = Gi + PiCi
+This means every carry bit can be found from generate and propagate terms.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155376043-11b716f8-78fb-4533-ab44-7f2f3ff8dd24.jpg">
+</p>
+<p align="center">
+Fig 1. Carry circuit
+</p>
+
 ### 3.  Sum circuit of 4 bit CLA adder:
 ![4_bit_CLA_reference_circuit_Sum_circuit](https://user-images.githubusercontent.com/99788755/155376689-c864cc61-00f6-4f49-b065-4de74ad08c48.jpg)
+
+
 ## Reference Circuit Waveforms:
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
 
