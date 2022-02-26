@@ -205,7 +205,7 @@ Fig 17. Carry 2 circuit schematic
 </p>
 
 ## Carry 2 circuit symbol:
-Fig 18. shows carry 1 circuit block symbol named 'isd_carry2_block'. It consists of three input pins C0, C1,P0, P1, G0 & G1, two output pins C2 & C2bar and supply pins vdd & vss.
+Fig 18. shows carry 2 circuit block symbol named 'isd_carry2_block'. It consists of six input pins C0, C2, P0, P1, G0 & G1, two output pins C2 & C2bar and supply pins vdd & vss.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155744094-c65b6ef7-1f4f-42cc-918e-3101c7b0b279.png">
@@ -215,10 +215,24 @@ Fig 18. Carry 2 circuit symbol
 </p>
 
 ## Carry 3 circuit schematic:
-![Carry_3_circuit_schematic](https://user-images.githubusercontent.com/99788755/155744165-af2013c4-6fdd-4ba0-a6d0-01e74142ffaf.png)
+Carry 3 circuit schematic using CMOS mirror logic is shown in Fig. 19. The circuit 3 block is implemented as per design equation C3 = G2 + P2(G1 + P1(G0 + P0C0)). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Carry 3 circuit schematic consists of 16 transistors. 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155744165-af2013c4-6fdd-4ba0-a6d0-01e74142ffaf.png">
+</p> 
+<p align="center">
+Fig 19. Carry 3 circuit schematic
+</p>
 
 ## Carry 3 circuit symbol:
-![Carry_3_circuit_symbol](https://user-images.githubusercontent.com/99788755/155744230-84080e67-df73-4cbf-b816-b34bac05ca1a.png)
+Fig 20. shows carry 3 circuit block symbol named 'isd_carry3_block'. It consists of eight input pins C0, C3, P0, P1, P2, G0, G1 & G2, two output pins C3 & C3bar and supply pins vdd & vss.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155744230-84080e67-df73-4cbf-b816-b34bac05ca1a.png">
+</p> 
+<p align="center">
+Fig 20. Carry 3 circuit symbol
+</p>
 
 ## Carry 4 circuit schematic:
 
