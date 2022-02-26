@@ -2,16 +2,19 @@
 This repository presents step-wise design and simulation guide for implementing 4-bit carry look-ahead (CLA) adder using CMOS mirror logic in 28nm PDK using Synopsy Custom Compiler and Primesim Tool.
 
 # Table of Contents: 
-1. [Abstract](#abstract)
-2. [Reference circuit details](#reference-circuit-details)
-3. [Reference circuit Design](#reference-circuit-design)
-4. 
+1. [Introduction](#introduction)
+2. [Circuit Design](#circuit-design)
+3. [Simulation Results](#simulation-results]
+4. [Conclusion](#conclusion)
+5. [Author](#author)
+6. [Acknowledgements](#acknowledgments)
+7. [References](#references)
 
 # Introduction:
 This report presents a transistor-level implementation of a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic. CLA adder design overcomes the delay issue in 
-conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. The design has been created on Synopsis [Custom Compiler ](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html) software and simulated using PrimeWave environment.
+conventional RCA adder by eliminating the cascading effect of the carry bits. The sum and carry terms are processed at once in the CLA adder. CMOS mirror logic results in reduced transistor count compared to Static CMOS logic. Further, it uses the same transistor topology for NMOS and PMOS networks which leads to a symmetric layout. The design has been created on Synopsis [Custom Compiler ](https://www.synopsys.com/implementation-and-signoff/custom-design-platform/custom-compiler.html) software and simulated using [PrimeWave](https://www.synopsys.com/implementation-and-signoff/ams-simulation/primewave.html)environment. The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the 4 bit CLA adder circuit.
 
-# Reference circuit details: 
+## Reference circuit details: 
 Proposed 4-Bit Carry Look-Ahead Adder is implemented using CMOS Mirror Logic. CLA first calculates the values of generate Gi and propagate Pi terms [1]. 
 
 For every bit i,
@@ -35,27 +38,19 @@ This avoids the need to ripple the carry bits serially down the chain [2]. Carry
 
 The proposed circuit add two 4-bit binary numbers and generate a carry out bit if the sum exceeds 15
 
-# Reference circuit Design:
-## 1. Generate and Propagate circuit of 4 bit CLA adder:
+## Reference circuit Design:
+
+### 1. Generate and Propagate circuit of 4 bit CLA adder:
 ![4_bit_CLA_reference_circuit_generate_propogate_circuit](https://user-images.githubusercontent.com/99788755/155375356-f33f86ed-de48-4c54-8fc0-4a05b6a2e078.jpg)
-## 2. Carry circuit of 4 bit CLA adder:
+### 2. Carry circuit of 4 bit CLA adder:
 ![4_bit_CLA_reference_circuit_Carry_circuit](https://user-images.githubusercontent.com/99788755/155376043-11b716f8-78fb-4533-ab44-7f2f3ff8dd24.jpg)
-## 3.  Sum circuit of 4 bit CLA adder:
+### 3.  Sum circuit of 4 bit CLA adder:
 ![4_bit_CLA_reference_circuit_Sum_circuit](https://user-images.githubusercontent.com/99788755/155376689-c864cc61-00f6-4f49-b065-4de74ad08c48.jpg)
-# Reference Circuit Waveforms:
+## Reference Circuit Waveforms:
 ![4_bit_CLA_waveforms](https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg)
 
-# Tools Used:
-## 1. Synopsys Custom Compiler:
- The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.
 
-## 2. Synopsys Primewave:
- PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.
-
-## 3. Synopsys 28nm PDK:
- The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above designed circuit.
-
-# Pre-Layout Schematics and Simulations:
+# Circuit Design: 
 
 ## Proposed Modular Design of 4 bit CLA adder using Synopsys Custom Compiler tool:
 ![proposed modular CLA](https://user-images.githubusercontent.com/99788755/155766538-c040fbed-48eb-4bfb-ad8c-bcd2949b6744.png)
@@ -126,26 +121,26 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ## 4 bit CLA adder Symbol:
 ![4_bit_CLA_adder_symbol](https://user-images.githubusercontent.com/99788755/155745152-545eb361-e295-4ffb-a3af-eacaef5fbcc9.png)
 
-# Testbench Set up: 
+## Testbench Set up: 
 
-## 1. Input pulse Voltage Source definitions: 
+### 1. Input pulse Voltage Source definitions: 
 ![Parameters set for Voltage Source for Input C0](https://user-images.githubusercontent.com/99788755/155772780-779cf528-3641-4667-a70f-0fcc7b3c1cfe.png)
 
 ![input pulse definitions](https://user-images.githubusercontent.com/99788755/155772743-436913a4-7f7e-4601-a446-55e0f875de36.png)
 
-## 2. Supply voltage definitions: 
+### 2. Supply voltage definitions: 
 ![supply voltage definitions](https://user-images.githubusercontent.com/99788755/155772838-cbbe88bd-a0f4-4a6f-aac8-eb623ec3bb71.png)
 
-## 3. Transient settings: 
+### 3. Transient settings: 
 
 ![transient settings](https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png)
 
-# 4 Bit CLA adder Testbench: 
+## 4 Bit CLA adder Testbench: 
 ![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png)
 
 
 
-# Simulations: 
+# Simulation Results: 
 
 ## Transient analysis:
 1. After creating and saving the 4 bit CLA adder schematic testbench, go to 'Tools' and open 'Primewave' to start the simulation. 
@@ -161,7 +156,7 @@ Fig : Addition of of two 4 bit binary numbers with carry in bit
 ![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
 Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit 
 
-# Verification of binary addition from waveforms: 
+## Verification of binary addition from waveforms: 
 
 The input-output waveforms showcases the addition of of two 4 bit binary numbers with carry in and carry out bits.
 
@@ -174,6 +169,7 @@ The input-output waveforms showcases the addition of of two 4 bit binary numbers
 
 ![binary addition time 3](https://user-images.githubusercontent.com/99788755/155765490-ccfc6c31-928e-4db0-b695-8e669bc3e195.png)
 
+# Conclusion
 
 # Author:
 Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering, Mumbai
