@@ -88,7 +88,7 @@ Fig 5. Proposed Modular design of 4 bit CLA adder
 Proposed modular design shown in Fig 5. subdivides 4 bit CLA adder IP block in smaller circuit blocks, i.e carry circuit, sum circuit, generate circuit, and propagate circuit blocks. Further, generate circuit block is divided into AND circuit block and propagate circuit block is divided into OR circuit block. Fig. 6 shows proposed 4 bit CLAD adder design IP. 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155844920-e582ce81-38ad-4885-857e-493f073d6892.png">
+<img src="https://user-images.githubusercontent.com/99788755/155846835-cf319b46-a88a-4cf8-8d91-cc7ccbc78bc9.png">
 </p>
 <p align="center">
 Fig 6. 4 bit CLA adder IP
