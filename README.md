@@ -317,11 +317,13 @@ Fig 28. Input pulse definitions
 
 ### 2. Supply voltage definitions: 
 In modular design, all the modules/block require a steady DC source, since a 28nm PDK Technology node of Synopsys was adopted, a 1.8V supply is considered for the design.\
+
 vdc = 1.8V 
 
 vss = 0V 
 
 ## 4 Bit CLA adder Testbench: 
+Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with appropriate input pulses acting as inputs for the CLA adder, and supply voltages. Further steps after creation and executing testbench results are elaborated in simulation results 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png">
@@ -365,17 +367,30 @@ Fig 32. Expanded view of 4 bit CLA adder input output waveforms
 </p>
 
 ## Verification of binary addition from waveforms: 
-The input-output waveforms verifies the addition of of two 4 bit binary numbers with carry in and carry out bits.
+From the simulated input-output waveforms, the addition of two 4 bit binary numbers with carry in and carry out bits is verified. The proposed design adds two 4-bit binary numbers and generate a carry out bit if the sum exceeds 15 which clearly visible from timing waveforms shown in Fig. 34
 
-![4 bit binary addition process](https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png">
+</p> 
+<p align="center">
+Fig 33. Binary addition process of 4 bit numbers 
+</p>
 
 ![binary addition time 1](https://user-images.githubusercontent.com/99788755/155766852-681f6b51-3fdd-41c8-9a77-9a5d719cbe30.png)
 
 ![binary addition time 2](https://user-images.githubusercontent.com/99788755/155765480-63098648-c5fa-483f-acf4-18ded424e411.png)
 
-![binary addition time 3](https://user-images.githubusercontent.com/99788755/155765490-ccfc6c31-928e-4db0-b695-8e669bc3e195.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155765490-ccfc6c31-928e-4db0-b695-8e669bc3e195.png">
+</p> 
+<p align="center">
+Fig 34. Binary addition of 4 bit numbers by time frame
+</p>
 
 # Conclusion:
+1. The repository presents the design and simulation of 4 bit CLA adder using CMOS mirror logic on 28nm technology node of Synopsys.
+2. Modular design adopted was successful and 4 bit binary addition is verified from output waveforms. The proposed circuit add two 4-bit binary numbers and generates a carry out bit if the sum exceeds 15
+3. Adopting Mirror logic reduced the transistor count in comparison with static CMOS logic. 
 
 # Author:
 Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering, Mumbai
