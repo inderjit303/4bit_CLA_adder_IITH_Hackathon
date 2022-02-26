@@ -145,20 +145,34 @@ Fig 11. Propagate circuit Schematic
 </p>
 
 ## Propagate circuit Symbol: 
-Fig 12. shows propagate circuit block symbol named 'isd_propagate_block'. It consists of eight input pins A0_pg to A3_pg, B0_pg to B3_pg, four output pins P0-P3 and supply pins VDD and Vss.
+Fig 12. shows propagate circuit block symbol named 'isd_propagate_block'. It consists of eight input pins A0_pg to A3_pg, B0_pg to B3_pg, four output pins P0-P3 and supply pins Vdd and VSS.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155748620-b7292100-0fbb-4952-b5a2-7afe6166a9ae.png">
 </p> 
 <p align="center">
-Fig 11. Propagate circuit Schematic 
+Fig 12. Propagate circuit Symbol
 </p>
 
 ## Generate circuit Schematic:
-![Generate circuit Schematic](https://user-images.githubusercontent.com/99788755/155747583-ca3f2362-9c70-4f7d-894d-f2b26cc10d84.png)
+Next, we design the generate circuit schematic using static CMOS logic as shown in Fig. 13. The generate block is implemented as per design equation Gi = AiBi. Using AND2 circuit block named 'isd_and2' with two input pins, one output pin and supply pins, propagate terms G0, G1, G2 and G3 are implemented utilizing modular design. 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155747583-ca3f2362-9c70-4f7d-894d-f2b26cc10d84.png">
+</p> 
+<p align="center">
+Fig 13. Generate circuit schematic
+</p>
 
 ## Generate circuit Symbol:
-![Generate circuit symbol](https://user-images.githubusercontent.com/99788755/155747630-9816041f-b89a-43d5-9266-a276b0ca8535.png)
+Fig 14. shows generate circuit block symbol named 'isd_generate_block'. It consists of eight input pins A0_pg to A3_pg, B0_pg to B3_pg, four output pins P0-P3 and supply pins Vdd and VSS.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155747630-9816041f-b89a-43d5-9266-a276b0ca8535.png">
+</p> 
+<p align="center">
+Fig 14. Generate circuit symbol
+</p>
 
 ## Carry 1 circuit Schematic: 
 ![Carry_1_circuit_schematic](https://user-images.githubusercontent.com/99788755/155743857-3bdb0ec0-1d3d-40a3-8099-0ecbbd3b91a4.png)
