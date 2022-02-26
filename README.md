@@ -1,5 +1,5 @@
 # Design and Simulation of a 4-bit CLA adder using CMOS mirror logic
-This repository presents step-wise design and simulation guide for implementing 4-bit carry look-ahead (CLA) adder using CMOS mirror logic in 28nm PDK using Synopsy Custom Compiler and Primesim Tool.
+This repository presents a step-wise design and simulation guide to implement a 4-bit carry look-ahead (CLA) adder using CMOS mirror logic in 28nm PDK using Synopsy Custom Compiler and Primesim Tool.
 
 # Table of Contents: 
 1. [Introduction](#introduction)
