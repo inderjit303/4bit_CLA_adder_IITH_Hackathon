@@ -348,30 +348,24 @@ Fig 30. Transient setting
 </p>
 
 ## Actual Waveforms: 
+Fig. 31 shows the 4 bit CLA adder input and output waveforms. Among the inputs, C0 is carry in bit, A0-A3 is 4 bit binary number, B0-B3 is 4 bit binary number and among the outputs is S0-S3, a 4 bit Sum and C4 is carry out bit. Fig 32 shows expanded view of the 4 bit CLA adder input output waveforms.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
+<img src="https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png">
 </p> 
 <p align="center">
 Fig 31. 4 bit CLA adder input output waveforms 
 </p>
 
-![Input_output transient waveforms](https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png)
-Fig : Addition of of two 4 bit binary numbers with carry in bit  
-
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
+<img src="https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png">
 </p> 
 <p align="center">
-Fig 32. Transient setting 
+Fig 32. Expanded view of 4 bit CLA adder input output waveforms 
 </p>
 
-![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
-Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit 
-
 ## Verification of binary addition from waveforms: 
-
-The input-output waveforms showcases the addition of of two 4 bit binary numbers with carry in and carry out bits.
+The input-output waveforms verifies the addition of of two 4 bit binary numbers with carry in and carry out bits.
 
 ![4 bit binary addition process](https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png)
 
