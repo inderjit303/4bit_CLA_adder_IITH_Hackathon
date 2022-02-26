@@ -17,7 +17,6 @@ conventional RCA adder by eliminating the cascading effect of the carry bits. Th
 
 # Reference circuit details: 
 
-
 ## Reference circuit Design:
 
 <p align="left">
@@ -85,7 +84,7 @@ To implement 4 bit CLA adder using CMOS mirror logic, modular design apporach is
 Fig 5. Proposed Modular design of 4 bit CLA adder
 </p>
 
-Proposed modular design shown in Fig 5. subdivides 4 bit CLA adder IP block in smaller circuit blocks, i.e carry circuit, sum circuit, generate circuit, and propagate circuit blocks. Further, generate circuit block is divided into AND circuit block and propagate circuit block is divided into OR circuit block. Fig. 6 shows proposed 4 bit CLAD adder design IP. 
+Proposed modular design shown in Fig 5. subdivides 4 bit CLA adder IP block in smaller circuit blocks, i.e carry circuit, sum circuit, generate circuit, and propagate circuit blocks. Further, generate circuit block is divided into AND circuit block and propagate circuit block is divided into OR circuit block. Fig. 6 shows proposed 4 bit CLA adder design IP. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155846835-cf319b46-a88a-4cf8-8d91-cc7ccbc78bc9.png">
@@ -276,6 +275,9 @@ Fig 24. Sum circuit symbol
 
 ## 4 bit CLA adder Schematic:
 
+Finally, integrating the various block together, we achieve final schematic of 4 bit CLA adder modular design as shown in Fig 25. All 8 inputs A0-A3 and B0-B3 are applied to generate and propagate blocks. The outputs from generate and propgate blocks are G0-G3 and P0-P3. 
+With the help of propagate and generate terms, sum and carry bits are evaluated in a faster way. Four sum circuit blocks and carry 1 to carry 4 circuit blocks are interconnected together to achieve a 4 bit CLA adder.
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745365-f6fb3a18-5d39-4a5d-937b-1b7739b775e1.png">
 </p> 
@@ -285,6 +287,7 @@ Fig 25. 4 bit CLA adder schematic
 
 
 ## 4 bit CLA adder Symbol:
+Fig 26. shows 4 bit CLA adder symbol named 'isd_final_circuit_test'. It consists of nine input pins C0, A0-A3, & B0-B3, five output pins C4, S0, S1, S2 & S3 and supply pins vdd & vss. This final 4 bit CLA adder IP is same as the proposed IP shown in Fig. 6. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745152-545eb361-e295-4ffb-a3af-eacaef5fbcc9.png">
