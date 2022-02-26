@@ -175,7 +175,7 @@ Fig 14. Generate circuit symbol
 </p>
 
 ## Carry 1 circuit Schematic: 
-Next, carry 1 circuit schematic using CMOS mirror logic is as shown in Fig. 14. The circuit 1 block is implemented as per design equation C1 = G0 + P0C0. Generate circuit schematic consists of 24 transistors.
+Next, carry 1 circuit schematic using CMOS mirror logic is as shown in Fig. 14. The circuit 1 block is implemented as per design equation C1 = G0 + P0C0. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD. Generate circuit schematic consists of 8 transistors. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155743857-3bdb0ec0-1d3d-40a3-8099-0ecbbd3b91a4.png">
