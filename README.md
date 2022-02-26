@@ -135,7 +135,7 @@ Fig 10. OR2 circuit symbol
 </p>
 
 ## Propagate circuit Schematic: 
-Next, we design the propagate circuit schematic using static CMOS logic as shown in Fig. 11. The propagate block is implemented as per design equation Pi = Ai+Bi. Using OR2 circuit block named 'isd_or2_gate' with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS, propagate terms P0, P1, P2 and P3 are implemented utilizing modular design. 
+Next, we design the propagate circuit schematic using static CMOS logic as shown in Fig. 11. The propagate block is implemented as per design equation Pi = Ai+Bi. Using OR2 circuit block named 'isd_or2_gate' with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS, propagate terms P0, P1, P2 and P3 are implemented utilizing modular design. Propagate circuit schematic consists of 24 transistors.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155748575-bc963bec-af7a-40e2-939e-6eea7e4c23d3.png">
@@ -155,7 +155,7 @@ Fig 12. Propagate circuit Symbol
 </p>
 
 ## Generate circuit Schematic:
-Next, we design the generate circuit schematic using static CMOS logic as shown in Fig. 13. The generate block is implemented as per design equation Gi = AiBi. Using AND2 circuit block named 'isd_and2' with two input pins, one output pin and supply pins, generate terms G0, G1, G2 and G3 are implemented utilizing modular design. 
+Next, we design the generate circuit schematic using static CMOS logic as shown in Fig. 13. The generate block is implemented as per design equation Gi = AiBi. Using AND2 circuit block named 'isd_and2' with two input pins, one output pin and supply pins, generate terms G0, G1, G2 and G3 are implemented utilizing modular design. Generate circuit schematic consists of 24 transistors.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155747583-ca3f2362-9c70-4f7d-894d-f2b26cc10d84.png">
@@ -165,7 +165,7 @@ Fig 13. Generate circuit schematic
 </p>
 
 ## Generate circuit Symbol:
-Fig 14. shows generate circuit block symbol named 'isd_generate_block'. It consists of eight input pins A0_pg to A3_pg, B0_pg to B3_pg, four output pins G0-G3 and supply pins Vdd and VSS.
+Fig 14. shows generate circuit block symbol named 'isd_generate_block'. It consists of eight input pins A0_gen to A3_gen, B0_gen to B3_gen, four output pins G0-G3 and supply pins Vdd and VSS.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155747630-9816041f-b89a-43d5-9266-a276b0ca8535.png">
