@@ -37,7 +37,7 @@ Fig 1. Generate and Propagate reference circuit
  
 ### 2. Carry circuit of 4 bit CLA adder:
 Fig 2. shows carry circuit block implemented using CMOS mirror logic for 4 bit CLA adder. The carry circuit is implemented based on the following equation 
-Ci+1 = Gi + PiCi
+Ci+1 = Gi + PiCi\
 This means every carry bit can be found from generate and propagate terms.
 
 <p align="center">
