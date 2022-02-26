@@ -125,7 +125,7 @@ Fig 9. OR2 circuit schematic
 </p>
 
 ## OR2 circuit symbol:
-Fig 10. shows OR2 circuit block symbol named 'isd_or2' which is the requirement for the modular design. The OR2 circuit block consists of two input pins In1 & In2, one output pin Out and supply pins VDD and VSS.
+Fig 10. shows OR2 circuit block symbol named 'isd_or2_gate'. The OR2 circuit block consists of two input pins In1 & In2, one output pin Out and supply pins VDD and VSS.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751304-24691eca-c306-4407-9b44-9f327aee8c1a.png">
@@ -135,11 +135,25 @@ Fig 10. OR2 circuit symbol
 </p>
 
 ## Propagate circuit Schematic: 
-![Propagate circuit schematic](https://user-images.githubusercontent.com/99788755/155748575-bc963bec-af7a-40e2-939e-6eea7e4c23d3.png)
+Next, we design a propagate block using static CMOS logic as shown in Fig. 10. 
+
+First, an two input NOR gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an OR2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155748575-bc963bec-af7a-40e2-939e-6eea7e4c23d3.png">
+</p> 
+<p align="center">
+Fig 11. Propagate circuit Schematic 
+</p>
 
 ## Propagate circuit Symbol: 
-![Propagate circuit symbol](https://user-images.githubusercontent.com/99788755/155748620-b7292100-0fbb-4952-b5a2-7afe6166a9ae.png)
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155748620-b7292100-0fbb-4952-b5a2-7afe6166a9ae.png">
+</p> 
+<p align="center">
+Fig 11. Propagate circuit Schematic 
+</p>
 
 ## Generate circuit Schematic:
 ![Generate circuit Schematic](https://user-images.githubusercontent.com/99788755/155747583-ca3f2362-9c70-4f7d-894d-f2b26cc10d84.png)
