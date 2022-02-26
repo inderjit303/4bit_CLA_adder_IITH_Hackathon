@@ -32,7 +32,7 @@ Fig 1 shows generate and propgate circuit blocks implemented using static CMOS l
 <img src="https://user-images.githubusercontent.com/99788755/155375356-f33f86ed-de48-4c54-8fc0-4a05b6a2e078.jpg">
 </p>
 <p align="center">
-Fig 1. Generate and Propagate reference circuit
+Fig 1. Generate and Propagate circuit
 </p>
  
 ### 2. Carry circuit of 4 bit CLA adder:
