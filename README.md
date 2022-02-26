@@ -41,9 +41,10 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ## Reference circuit Design:
 
 ### 1. Generate and Propagate circuit of 4 bit CLA adder:
-![4_bit_CLA_reference_circuit_generate_propogate_circuit](https://user-images.githubusercontent.com/99788755/155375356-f33f86ed-de48-4c54-8fc0-4a05b6a2e078.jpg)
- 
- <img align="center" src="https://user-images.githubusercontent.com/99788755/155375356-f33f86ed-de48-4c54-8fc0-4a05b6a2e078.jpg" alt="Fig 1. ">
+
+<p align="center" width="100%">
+    <img width="100%" src="https://user-images.githubusercontent.com/99788755/155375356-f33f86ed-de48-4c54-8fc0-4a05b6a2e078.jpg"> 
+</p>
  
 ### 2. Carry circuit of 4 bit CLA adder:
 ![4_bit_CLA_reference_circuit_Carry_circuit](https://user-images.githubusercontent.com/99788755/155376043-11b716f8-78fb-4533-ab44-7f2f3ff8dd24.jpg)
@@ -59,7 +60,9 @@ The proposed circuit add two 4-bit binary numbers and generate a carry out bit i
 ![proposed modular CLA](https://user-images.githubusercontent.com/99788755/155766538-c040fbed-48eb-4bfb-ad8c-bcd2949b6744.png)
 
 ## AND2 circuit Schematic: 
-![AND circuit schematic](https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png)
+<p align="center" width="100%">
+    <img width="70%" src="https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png"> 
+</p>
 
 ## AND2 circuit symbol: 
 ![AND circuit symbol](https://user-images.githubusercontent.com/99788755/155751191-6667ac3f-97a2-42bf-ab1d-221102150a2f.png)
@@ -178,7 +181,7 @@ Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering,
 # Acknowledgements:
 1. Cloud Based Analog IC Design Hackathon (https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
 2. Synopsys India (https://www.synopsys.com/)
-3. VLSI System Design (VSD) Corp. Pvt. Ltd India (https://www.vlsisystemdesign.com/)
+3. [Kunal Ghosh, Co-founder, VSD Corp. Pvt Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0xcWjpLDThSEo6S9UPO9Tw%3D%3D)
 4. Chinmay panda, IIT Hyderabad
 5. Sameer Durgoji, NIT Karnataka
                                   
