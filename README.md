@@ -297,21 +297,38 @@ Fig 26. 4 bit CLA adder symbol
 </p>
 
 ## Testbench Set up: 
+Finally, to test a 4 bit CLA adder operation, a testbench is created. Here, input pulse definition include parameters setting of the rise time, fall time, delay time, high and low voltage levels, pulse width and period as shown in Fig 27 & 28. 
 
 ### 1. Input pulse Voltage Source definitions: 
-![Parameters set for Voltage Source for Input C0](https://user-images.githubusercontent.com/99788755/155772780-779cf528-3641-4667-a70f-0fcc7b3c1cfe.png)
 
-![input pulse definitions](https://user-images.githubusercontent.com/99788755/155772743-436913a4-7f7e-4601-a446-55e0f875de36.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155772780-779cf528-3641-4667-a70f-0fcc7b3c1cfe.png">
+</p> 
+<p align="center">
+Fig 27. Parameters set for Voltage Source for Input C0
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155772743-436913a4-7f7e-4601-a446-55e0f875de36.png">
+</p> 
+<p align="center">
+Fig 28. Input pulse definitions 
+</p>
 
 ### 2. Supply voltage definitions: 
-![supply voltage definitions](https://user-images.githubusercontent.com/99788755/155772838-cbbe88bd-a0f4-4a6f-aac8-eb623ec3bb71.png)
+In modular design, all the modules/block require a steady DC source, since a 28nm PDK Technology node of Synopsys was adopted, a 1.8V supply is considered for the design.\
+vdc = 1.8V 
 
-### 3. Transient settings: 
-
-![transient settings](https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png)
+vss = 0V 
 
 ## 4 Bit CLA adder Testbench: 
-![4_bit_CLA_adder_testbench](https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png">
+</p> 
+<p align="center">
+Fig 29. 4 bit CLA adder testbench
+</p>
 
 # Simulation Results: 
 
@@ -323,9 +340,32 @@ Fig 26. 4 bit CLA adder symbol
 5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
+</p> 
+<p align="center">
+Fig 30. Transient setting 
+</p>
+
 ## Actual Waveforms: 
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
+</p> 
+<p align="center">
+Fig 31. 4 bit CLA adder input output waveforms 
+</p>
+
 ![Input_output transient waveforms](https://user-images.githubusercontent.com/99788755/155678368-cf9de85e-0627-4c42-9e8d-7cfa2dc6957a.png)
 Fig : Addition of of two 4 bit binary numbers with carry in bit  
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
+</p> 
+<p align="center">
+Fig 32. Transient setting 
+</p>
+
 ![Input_output transient waveforms 1](https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png)
 Fig : Expanded view of Addition of of two 4 bit binary numbers with carry in bit 
 
@@ -336,7 +376,6 @@ The input-output waveforms showcases the addition of of two 4 bit binary numbers
 ![4 bit binary addition process](https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png)
 
 ![binary addition time 1](https://user-images.githubusercontent.com/99788755/155766852-681f6b51-3fdd-41c8-9a77-9a5d719cbe30.png)
-
 
 ![binary addition time 2](https://user-images.githubusercontent.com/99788755/155765480-63098648-c5fa-483f-acf4-18ded424e411.png)
 
