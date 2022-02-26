@@ -105,7 +105,7 @@ Fig 7. AND2 circuit schematic
 </p>
 
 ## AND2 circuit symbol: 
-Fig 8. shows AND2 circuit block symbol which is the requirement for the modular design. The AND2 circuit block clearly shows two input pins In1 & In2, one output pin Out and supply pins VDD and VSS.
+Fig 8. shows AND2 circuit block symbol named 'isd_and2' which is the requirement for the modular design. The AND2 circuit block clearly shows the two input pins In1 & In2, one output pin Out and supply pins VDD and VSS.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751191-6667ac3f-97a2-42bf-ab1d-221102150a2f.png">
