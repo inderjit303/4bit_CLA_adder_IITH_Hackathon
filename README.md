@@ -94,7 +94,7 @@ Fig 6. 4 bit CLA adder IP
 </p>
 
 ## AND2 circuit Schematic: 
-We start our modular design approach by designing two input AND circuit block using static CMOS logic as shown in Fig. 7. First, an two input NAND gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an AND2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
+We start our modular design approach by designing two input AND circuit block using static CMOS logic as shown in Fig. 7. First, an two input NAND gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an AND2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/body terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751142-81dd8d8a-763c-46be-b59d-cc604cf1114e.png">
@@ -114,7 +114,7 @@ Fig 8. AND2 circuit symbol
 </p>
 
 ## OR2 circuit Schematic:
-Next, we design a two input OR circuit block using static CMOS logic as shown in Fig. 9. First, an two input NOR gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an OR2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/boby terminal of all NMOS transistors are connected to VSS and substrate/boby terminal of all PMOS transistors are connected to VDD.
+Next, we design a two input OR circuit block using static CMOS logic as shown in Fig. 9. First, an two input NOR gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an OR2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/body terminal of all NMOS transistors are connected to VSS and substrate/body terminal of all PMOS transistors are connected to VDD.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751255-2febc6bd-85d6-4849-9353-0f51b6bf404c.png">
@@ -174,7 +174,7 @@ Fig 14. Generate circuit symbol
 </p>
 
 ## Carry 1 circuit Schematic: 
-Carry 1 circuit schematic using CMOS mirror logic is shown in Fig. 15. The circuit 1 block is implemented as per design equation C1 = G0 + P0C0. The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Carry 1 circuit schematic consists of 8 transistors. 
+Carry 1 circuit schematic using CMOS mirror logic is shown in Fig. 15. The circuit 1 block is implemented as per design equation C1 = G0 + P0C0. The substrate/body terminal of all NMOS transistors are connected to vss and substrate/body terminal of all PMOS transistors are connected to vdd. Carry 1 circuit schematic consists of 8 transistors. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155743857-3bdb0ec0-1d3d-40a3-8099-0ecbbd3b91a4.png">
@@ -194,7 +194,7 @@ Fig 16. Carry 1 circuit symbol
 </p>
 
 ## Carry 2 circuit Schematic: 
-Carry 2 circuit schematic using CMOS mirror logic is shown in Fig. 17. The circuit 2 block is implemented as per design equation C2 = G1 + P1(G0 + P0C0). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Carry 2 circuit schematic consists of 12 transistors. 
+Carry 2 circuit schematic using CMOS mirror logic is shown in Fig. 17. The circuit 2 block is implemented as per design equation C2 = G1 + P1(G0 + P0C0). The substrate/body terminal of all NMOS transistors are connected to vss and substrate/body terminal of all PMOS transistors are connected to vdd. Carry 2 circuit schematic consists of 12 transistors. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155743985-c4f662d4-1fe3-403d-83b8-3a3d0eae7201.png">
@@ -214,7 +214,7 @@ Fig 18. Carry 2 circuit symbol
 </p>
 
 ## Carry 3 circuit schematic:
-Carry 3 circuit schematic using CMOS mirror logic is shown in Fig. 19. The circuit 3 block is implemented as per design equation C3 = G2 + P2(G1 + P1(G0 + P0C0)). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Carry 3 circuit schematic consists of 16 transistors. 
+Carry 3 circuit schematic using CMOS mirror logic is shown in Fig. 19. The circuit 3 block is implemented as per design equation C3 = G2 + P2(G1 + P1(G0 + P0C0)). The substrate/body terminal of all NMOS transistors are connected to vss and substrate/body terminal of all PMOS transistors are connected to vdd. Carry 3 circuit schematic consists of 16 transistors. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155744165-af2013c4-6fdd-4ba0-a6d0-01e74142ffaf.png">
@@ -234,7 +234,7 @@ Fig 20. Carry 3 circuit symbol
 </p>
 
 ## Carry 4 circuit schematic:
-Carry 4 circuit schematic using CMOS mirror logic is shown in Fig. 21. The circuit 4 block is implemented as per design equation C4 = G3 + P3(G2 + P2(G1 + P1(G0 + P0C0))). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Carry 4 circuit schematic consists of 20 transistors. 
+Carry 4 circuit schematic using CMOS mirror logic is shown in Fig. 21. The circuit 4 block is implemented as per design equation C4 = G3 + P3(G2 + P2(G1 + P1(G0 + P0C0))). The substrate/body terminal of all NMOS transistors are connected to vss and substrate/body terminal of all PMOS transistors are connected to vdd. Carry 4 circuit schematic consists of 20 transistors. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745409-677f496b-51dd-4fff-b1b2-afd6c67be62f.png">
@@ -254,7 +254,7 @@ Fig 22. Carry 4 circuit symbol
 </p>
 
 ## Sum circuit Schematic:
-Sum circuit schematic using CMOS mirror logic is shown in Fig. 23. The sum circuit block is implemented as per design equation Si = GiCi + (Ci+1)bar (Pi+Ci). The substrate/boby terminal of all NMOS transistors are connected to vss and substrate/boby terminal of all PMOS transistors are connected to vdd. Sum circuit schematic consists of 12 transistors. 
+Sum circuit schematic using CMOS mirror logic is shown in Fig. 23. The sum circuit block is implemented as per design equation Si = GiCi + (Ci+1)bar (Pi+Ci). The substrate/body terminal of all NMOS transistors are connected to vss and substrate/body terminal of all PMOS transistors are connected to vdd. Sum circuit schematic consists of 12 transistors. 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155740407-7775bf1e-116f-4afb-9e3d-9d771080c4a2.png">
