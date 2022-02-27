@@ -323,7 +323,9 @@ vdc = 1.8V
 vss = 0V 
 
 ## 4 Bit CLA adder Testbench: 
-Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with appropriate input pulses acting as inputs for the CLA adder, and supply voltages. Further steps after creation and executing testbench results are elaborated in simulation results.
+Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with appropriate input pulses acting as inputs for the CLA adder, and supply voltages. Further steps after creation and executing testbench results are elaborated in simulation results. The various cell created for the design of 4 bit CLA adder are shown in Fig 30
+
+
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png">
@@ -332,13 +334,20 @@ Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with app
 Fig 29. 4 bit CLA adder testbench
 </p>
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/99788755/155874294-0f6df427-6b72-471a-b47f-78d7bd581e7f.png">
+</p> 
+<p align="center">
+Fig 30. Library Cells for 4 bit CLA adder created in library manager
+</p>
+
 # Simulation Results: 
 
 ## Transient analysis:
 1. After creating and saving the 4 bit CLA adder schematic testbench, go to 'Tools' and open 'Primewave' to start the simulation. 
 2. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file present in the HSPICE folder. 
 3. After this click on the analyses and select the 'tran' (Transient) analysis in the analysis window and give the 'Start Time', 'Stop Time', and 'Time step' parameters and save it. 
-4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns 
+4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns. Fig 31. showcases the transient setting used in the design. 
 5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
 
@@ -346,34 +355,34 @@ Fig 29. 4 bit CLA adder testbench
 <img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
 </p> 
 <p align="center">
-Fig 30. Transient setting 
+Fig 31. Transient setting 
 </p>
 
 ## Actual Waveforms: 
-Fig. 31 shows the 4 bit CLA adder input and output waveforms. Among the inputs, C0 is carry in bit, A0-A3 is 4 bit binary number, B0-B3 is 4 bit binary number and among the outputs is S0-S3, a 4 bit Sum and C4 is carry out bit. Fig 32 shows expanded view of the 4 bit CLA adder input output waveforms.
+Fig. 32 shows the 4 bit CLA adder input and output waveforms. Among the inputs, C0 is carry in bit, A0-A3 is 4 bit binary number, B0-B3 is 4 bit binary number and among the outputs is S0-S3, a 4 bit Sum and C4 is carry out bit. Fig 33 shows expanded view of the 4 bit CLA adder input output waveforms.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155856332-719a775e-305b-4a17-9f26-e8df451ef699.png">
 </p> 
 <p align="center">
-Fig 31. 4 bit CLA adder input output waveforms 
+Fig 32. 4 bit CLA adder input output waveforms 
 </p>
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155678611-b27b1184-7e91-48b5-b047-88d227e03e8a.png">
 </p> 
 <p align="center">
-Fig 32. Expanded view of 4 bit CLA adder input output waveforms 
+Fig 33. Expanded view of 4 bit CLA adder input output waveforms 
 </p>
 
 ## Verification of binary addition from waveforms: 
-From the simulated input-output waveforms, the addition of two 4 bit binary numbers with carry in and carry out bits is verified. Fig. 33 shows the binary addition process of two 4 bit numbers. The proposed design adds two 4-bit binary numbers and generate a carry out bit if the sum exceeds 15 which clearly visible from timing waveforms shown in Fig. 34
+From the simulated input-output waveforms, the addition of two 4 bit binary numbers with carry in and carry out bits is verified. Fig. 34 shows the binary addition process of two 4 bit numbers. The proposed design adds two 4-bit binary numbers and generate a carry out bit if the sum exceeds 15 which clearly visible from timing waveforms shown in Fig. 35
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155765427-34a6630e-5bd2-456c-af0b-a355a709b83c.png">
 </p> 
 <p align="center">
-Fig 33. Binary addition process of 4 bit numbers 
+Fig 34. Binary addition process of 4 bit numbers 
 </p>
 
 ![binary addition time 1](https://user-images.githubusercontent.com/99788755/155766852-681f6b51-3fdd-41c8-9a77-9a5d719cbe30.png)
@@ -384,7 +393,7 @@ Fig 33. Binary addition process of 4 bit numbers
 <img src="https://user-images.githubusercontent.com/99788755/155765490-ccfc6c31-928e-4db0-b695-8e669bc3e195.png">
 </p> 
 <p align="center">
-Fig 34. Binary addition of 4 bit numbers by time frame
+Fig 35. Binary addition of 4 bit numbers by time frame
 </p>
 
 # Conclusion:
