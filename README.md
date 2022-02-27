@@ -134,7 +134,7 @@ Fig 10. OR2 circuit symbol
 </p>
 
 ## Propagate circuit Schematic: 
-Next, we design the propagate circuit schematic using static CMOS logic as shown in Fig. 11. The propagate block is implemented as per design equation Pi = Ai+Bi. Using OR2 circuit block named 'isd_or2_gate' with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS, propagate terms P0, P1, P2 and P3 are implemented utilizing modular design. Propagate circuit schematic consists of 24 transistors.
+Next, the propagate circuit schematic is implemented using static CMOS logic as shown in Fig. 11. The propagate block is implemented as per design equation Pi = Ai+Bi. Using OR2 circuit block named 'isd_or2_gate' with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS, propagate terms P0, P1, P2 and P3 are implemented utilizing modular design. Propagate circuit schematic consists of 24 transistors.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155748575-bc963bec-af7a-40e2-939e-6eea7e4c23d3.png">
@@ -154,7 +154,7 @@ Fig 12. Propagate circuit Symbol
 </p>
 
 ## Generate circuit Schematic:
-Next, we design the generate circuit schematic using static CMOS logic as shown in Fig. 13. The generate block is implemented as per design equation Gi = AiBi. Using AND2 circuit block named 'isd_and2' with two input pins, one output pin and supply pins, generate terms G0, G1, G2 and G3 are implemented utilizing modular design. Generate circuit schematic consists of 24 transistors.
+Next, the generate circuit schematic is implemented using static CMOS logic as shown in Fig. 13. The generate block is implemented as per design equation Gi = AiBi. Using AND2 circuit block named 'isd_and2' with two input pins, one output pin and supply pins, generate terms G0, G1, G2 and G3 are implemented utilizing modular design. Generate circuit schematic consists of 24 transistors.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155747583-ca3f2362-9c70-4f7d-894d-f2b26cc10d84.png">
