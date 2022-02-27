@@ -114,7 +114,7 @@ Fig 8. AND2 circuit symbol
 </p>
 
 ## OR2 circuit Schematic:
-Next, we design a two input OR circuit block using static CMOS logic as shown in Fig. 9. First, an two input NOR gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an OR2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/body terminal of all NMOS transistors are connected to VSS and substrate/body terminal of all PMOS transistors are connected to VDD.
+Next, a two input OR circuit block is designed using static CMOS logic as shown in Fig. 9. First, an two input NOR gate is implemented using static CMOS design which is followed connecting a CMOS inverter to make it an OR2 circuit with two input pins In1 & In2, one output pin Out and supply pins VDD and VSS. The substrate/body terminal of all NMOS transistors are connected to VSS and substrate/body terminal of all PMOS transistors are connected to VDD.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155751255-2febc6bd-85d6-4849-9353-0f51b6bf404c.png">
