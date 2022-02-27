@@ -323,7 +323,7 @@ vdc = 1.8V
 vss = 0V 
 
 ## 4 Bit CLA adder Testbench: 
-Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with appropriate input pulses acting as inputs for the CLA adder, and supply voltages. Further steps after creation and executing testbench results are elaborated in simulation results. The various cell created for the design of 4 bit CLA adder are shown in Fig 30
+Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with appropriate input pulses acting as inputs for the CLA adder, and supply voltages. Further steps after creation and executing testbench results are elaborated in simulation results. The various cell created for the design of 4 bit CLA adder are shown in Fig. 30
 
 
 
@@ -347,9 +347,9 @@ Fig 30. Library Cells for 4 bit CLA adder created in library manager
 1. After creating and saving the 4 bit CLA adder schematic testbench, go to 'Tools' and open 'Primewave' to start the simulation. 
 2. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file present in the HSPICE folder. 
 3. After this click on the analyses and select the 'tran' (Transient) analysis in the analysis window and give the 'Start Time', 'Stop Time', and 'Time step' parameters and save it. 
-4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns. Fig 31. showcases the transient setting used in the design. 
+4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns. Fig. 31 showcases the transient setting used in the design. 
 5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
-6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time 
+6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time.
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
