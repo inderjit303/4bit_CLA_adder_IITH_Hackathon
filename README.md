@@ -63,7 +63,7 @@ Fig 3. Sum circuit
 </p>
 
 ## Reference Circuit Waveforms:
-Fig 4. shows reference circuit waveforms which demonstrates the addition of two 4 bit binary numbers. The plots includes carry-in bit(C0), carry-out bit(C4), two 4 bit binary numbers (A0-A3 and B0-B3) and 4 bit sum bits (S0-S3). 
+Fig 4. shows reference circuit waveforms which demonstrates the addition of two 4 bit binary numbers. The plots includes carry-in bit(C0), carry-out bit(C4), two 4 bit binary numbers (A0-A3 and B0-B3) and 4 bit sum (S0-S3). 
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/99788755/155377136-407b194a-2aa5-4313-ab8c-9d99af45bfe2.jpg">
