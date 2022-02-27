@@ -389,7 +389,7 @@ Fig 34. Binary addition of 4 bit numbers by time frame
 
 # Conclusion:
 1. The repository presents the design and simulation of 4 bit CLA adder using CMOS mirror logic on 28nm technology node of Synopsys.
-2. Modular design adopted was successful and 4 bit binary addition is verified from output waveforms. The proposed circuit add two 4-bit binary numbers and generates a carry out bit if the sum exceeds 15
+2. Modular design adopted was successful and 4 bit binary addition is verified from output waveforms. The proposed circuit add two 4-bit binary numbers and generates a carry out bit if the sum exceeds 15.
 3. Adopting CMOS Mirror logic for 4 bit CLA adder have reduced the transistor count from 178 to 152 in comparison with static CMOS logic. 
 
 # Author:
