@@ -303,23 +303,25 @@ Finally, to test a 4 bit CLA adder operation, a testbench is created. Here, inpu
 ### 1. Input pulse Voltage Source definitions: 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155772780-779cf528-3641-4667-a70f-0fcc7b3c1cfe.png">
+<img src="https://user-images.githubusercontent.com/99788755/156176056-ea813b5d-24f6-4bdb-90d2-c5cf82e8fa1c.png">
 </p> 
 <p align="center">
 Fig 27. Parameters set for Voltage Source for Input C0
 </p>
 
+
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155772743-436913a4-7f7e-4601-a446-55e0f875de36.png">
+<img src="https://user-images.githubusercontent.com/99788755/156176163-d49b3dd7-3b64-43dd-94b6-c59232af4b06.png">
 </p> 
 <p align="center">
 Fig 28. Input pulse definitions 
 </p>
 
-### 2. Supply voltage definitions: 
-In modular design, all the modules/blocks require a steady DC source, since a 28nm PDK Technology node of Synopsys was adopted, a 1.8V supply is considered for the design.
 
-vdc = 1.8V 
+### 2. Supply voltage definitions: 
+In modular design, all the modules/blocks require a steady DC source, since a 28nm PDK Technology node of Synopsys was adopted, a 1.05V supply is considered for the design.
+
+vdc = 1.05V 
 
 vss = 0V 
 
@@ -329,7 +331,7 @@ Fig. 29 shows the testbench set-up for the final 4-bit CLA adder block, with app
 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155745282-eec4019b-3b30-46b3-84a8-7a3c10c3a816.png">
+<img src="https://user-images.githubusercontent.com/99788755/156176282-9cccde88-b565-4a9e-b588-1d953c747ca0.png">
 </p> 
 <p align="center">
 Fig 29. 4 bit CLA adder testbench
@@ -348,29 +350,30 @@ Fig 30. Library Cells for 4 bit CLA adder created in library manager
 1. After creating and saving the 4 bit CLA adder schematic testbench, go to 'Tools' and open 'Primewave' to start the simulation. 
 2. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file present in the HSPICE folder. 
 3. After this click on the analyses and select the 'tran' (Transient) analysis in the analysis window and give the 'Start Time', 'Stop Time', and 'Time step' parameters and save it. 
-4. In this design, start time is 0, stop time is 6ns and  time step is 0.5ns. Fig. 31 showcases the transient setting used in the design. 
+4. In this design, start time is 0, stop time is 6ns and  time step is 0.1ns. Fig. 31 showcases the transient setting used in the design. 
 5. Then add the outputs which needs to be plotted by writing the expression which select the input and output nets/labels on the testbench schematic.
 6. Next, from Simulation tab, click on Netlist and Run to view the input and output waveforms w.r.t time.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155772878-930dc8e3-ccc0-4728-8288-482ee9523611.png">
+<img src="https://user-images.githubusercontent.com/99788755/156176431-5ed0c0ce-0c9d-4b43-a68c-e215ca5429c1.png">
 </p> 
 <p align="center">
 Fig 31. Transient setting 
 </p>
 
+
 ## Actual Waveforms: 
 Fig. 32 shows the 4 bit CLA adder input and output waveforms. Among the inputs, C0 is carry in bit, A0-A3 is 4 bit binary number, B0-B3 is 4 bit binary number and among the outputs is S0-S3, a 4 bit Sum and C4 is carry out bit. Fig 33 shows expanded view of the 4 bit CLA adder input output waveforms.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/156169463-cd68249d-0d64-4a65-91f9-f8f624506ff3.png">
+<img src="https://user-images.githubusercontent.com/99788755/156176533-740b7a45-3ae6-4861-bfcb-5e8738ad91c9.png">
 </p> 
 <p align="center">
 Fig 32. 4 bit CLA adder input output waveforms 
 </p>
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/156169560-97bd5647-4ec3-41af-b958-033140f081a2.png">
+<img src="https://user-images.githubusercontent.com/99788755/156176610-5a588fb3-9803-4cc0-bdbd-3e9ae423ecef.png">
 </p> 
 <p align="center">
 Fig 33. Expanded view of 4 bit CLA adder input output waveforms 
@@ -400,7 +403,8 @@ Fig 35. Binary addition of 4 bit numbers by time frame
 # Conclusion:
 1. The repository presents the design and simulation of 4 bit CLA adder using CMOS mirror logic on 28nm technology node of Synopsys.
 2. Modular design adopted was successful and 4 bit binary addition is verified from output waveforms. The proposed circuit add two 4-bit binary numbers and generates a carry out bit if the sum exceeds 15.
-3. Adopting CMOS Mirror logic for 4 bit CLA adder have reduced the transistor count from 178 to 152 in comparison with static CMOS logic. 
+3. Circuit operates at low voltage of 1.05V and 0.1 GHz input clock frequency. 
+4. Adopting CMOS Mirror logic for 4 bit CLA adder have reduced the transistor count from 178 to 152 in comparison with static CMOS logic. 
 
 # Author:
 Inderjit Singh Dhanjal, Assistant Professor, K.J Somaiya College of Engineering, Mumbai
