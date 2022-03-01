@@ -197,11 +197,12 @@ Fig 16. Carry 1 circuit symbol
 Carry 2 circuit schematic using CMOS mirror logic is shown in Fig. 17. The circuit 2 block is implemented as per design equation C2 = G1 + P1(G0 + P0C0). The substrate/body terminal of all NMOS transistors are connected to vss and substrate/body terminal of all PMOS transistors are connected to vdd. Carry 2 circuit schematic consists of 12 transistors. 
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/99788755/155743985-c4f662d4-1fe3-403d-83b8-3a3d0eae7201.png">
+<img src="https://user-images.githubusercontent.com/99788755/156169275-2b7d9ad8-ab92-4e97-af1f-4b8014fe017b.png">
 </p> 
 <p align="center">
 Fig 17. Carry 2 circuit schematic
 </p>
+
 
 ## Carry 2 circuit symbol:
 Fig 18. shows carry 2 circuit block symbol named 'isd_carry2_block'. It consists of five input pins C0, P0, P1, G0 & G1, two output pins C2 & C2bar and supply pins vdd & vss.
