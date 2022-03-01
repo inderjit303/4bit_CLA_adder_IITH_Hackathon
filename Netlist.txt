@@ -1,11 +1,11 @@
 *  Generated for: PrimeSim
 *  Design library name: isd_4_bit_cla
-*  Design cell name: isd_final_circuit_test_tb
+*  Design cell name: isd_4_bit_cla_adder_tb
 *  Design view name: schematic
 .lib '/PDK/SAED_PDK32nm/hspice/saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
-*Fri Feb 25 07:23:43 2022
+*Tue Mar  1 13:49:11 2022
 
 .global gnd!
 ********************************************************************************
@@ -125,7 +125,7 @@ xm4 net21 g0 net25 vdd p105 w=0.1u l=0.03u nf=1 m=1
 xm5 c2bar c0 net21 vdd p105 w=0.1u l=0.03u nf=1 m=1
 xm0 net25 g1 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
 xm14 c2bar g1 vss vss n105 w=0.1u l=0.03u nf=1 m=1
-xm13 c2bar g0 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm13 c2bar g0 net49 vss n105 w=0.1u l=0.03u nf=1 m=1
 xm12 net49 p1 vss vss n105 w=0.1u l=0.03u nf=1 m=1
 xm11 net45 p0 net49 vss n105 w=0.1u l=0.03u nf=1 m=1
 xm10 c2bar c0 net45 vss n105 w=0.1u l=0.03u nf=1 m=1
@@ -210,24 +210,31 @@ xi13 c0 c4 c4bar g0 g1 g2 g3 p0 p1 p2 p3 vdd vss isd_carry4_block
 
 ********************************************************************************
 * Library          : isd_4_bit_cla
-* Cell             : isd_final_circuit_test_tb
+* Cell             : isd_4_bit_cla_adder_tb
 * View             : schematic
 * View Search List : hspice hspiceD schematic spice veriloga
 * View Stop List   : hspice hspiceD
 ********************************************************************************
-xi0 a0 a1 a2 a3 b0 b1 b2 b3 c0 c4 s0 s1 s2 s3 vdd gnd! isd_final_circuit_test
-v24 c0 gnd! dc=0 pulse ( 0 1.8 4.5n 0.1n 0.1n 4n 8n )
-v25 a0 gnd! dc=0 pulse ( 0 1.8 2n 0.1n 0.1n 5n 10n )
-v26 a1 gnd! dc=0 pulse ( 0 1.8 4n 0.1n 0.1n 5n 10n )
-v29 b0 gnd! dc=0 pulse ( 0 1.8 3.4n 0.1n 0.1n 5n 10n )
-v33 a2 gnd! dc=0 pulse ( 1.8 0 1n 0.1n 0.1n 5n 10n )
-v28 a3 gnd! dc=0 pulse ( 0 1.8 3n 0.1n 0.1n 5n 10n )
-v31 b2 gnd! dc=0 pulse ( 0 1.8 2.2n 0.1n 0.1n 5n 10n )
-v30 b1 gnd! dc=0 pulse ( 0 1.8 4.8n 0.1n 0.1n 4n 8n )
-v32 b3 gnd! dc=0 pulse ( 0 1.8 3.6n 0.1n 0.1n 5n 10n )
-v23 vdd gnd! dc=1.8
+xi1 a0 a1 a2 a3 b0 b1 b2 b3 c0 c4 s0 s1 s2 s3 vdd gnd! isd_final_circuit_test
+v69 b3 gnd! dc=0 pulse ( 0 1.05 3.6n 0.1n 0.1n 5n 10n )
+v68 b2 gnd! dc=0 pulse ( 0 1.05 2.2n 0.1n 0.1n 5n 10n )
+v67 b1 gnd! dc=0 pulse ( 0 1.05 4.8n 0.1n 0.1n 4n 8n )
+v66 b0 gnd! dc=0 pulse ( 0 1.05 3.4n 0.1n 0.1n 5n 10n )
+v65 a3 gnd! dc=0 pulse ( 0 1.05 3n 0.1n 0.1n 5n 10n )
+v64 a2 gnd! dc=0 pulse ( 1.05 0 1n 0.1n 0.1n 5n 10 )
+v63 a1 gnd! dc=0 pulse ( 0 1.05 4n 0.1n 0.1n 5n 10 )
+v62 a0 gnd! dc=0 pulse ( 0 1.05 2n 0.1n 0.1n 5n 10n )
+v61 c0 gnd! dc=0 pulse ( 0 1.05 4.5n 0.1n 0.1n 4n 10n )
+v60 vdd gnd! dc=1.05
 
-.tran '0.5n' '6n' name=tran
+
+
+
+
+
+
+
+.tran '0.1n' '6n' name=tran
 
 .option primesim_remove_probe_prefix = 0
 .probe v(*) i(*) level=1
@@ -236,7 +243,16 @@ v23 vdd gnd! dc=1.8
 
 .temp 25
 
+
+
 .option primesim_output=wdf
+
+
 .option parhier = LOCAL
+
+
+
+
+
 
 .end
